@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <linearGradient id="kgold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#F3E5AB"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+  </defs>
+  <path d="M15 10 L35 10 L45 30 L35 50 L15 50 L25 30 Z" fill="none" stroke="url(#kgold)" stroke-width="2.5"/>
+  <circle cx="30" cy="30" r="4" fill="url(#kgold)"/>
+  <text x="58" y="36" font-family="'Cinzel', serif" font-size="24" font-weight="700" letter-spacing="3" fill="#F7F4EE">KUZZY</text>
+  <text x="162" y="36" font-family="'Cinzel', serif" font-size="24" font-weight="400" letter-spacing="3" fill="url(#kgold)">KITCHEN</text>
+  <text x="60" y="49" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" letter-spacing="5" fill="#C5A059">CULINARY EXCELLENCE</text>
+</svg>

@@ -9,6 +9,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-compact.svg">
   
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +30,7 @@
   <header class="site-header">
     <div class="header-container">
       <a href="index.html" class="site-logo" aria-label="Kuzzy Kitchen Home">
-        <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen Logo" width="220" height="55">
+        <img decoding="async" src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen Logo" width="220" height="55">
       </a>
 
       <nav class="desktop-nav" aria-label="Main Navigation">
@@ -58,7 +61,7 @@
   <div class="mobile-nav-overlay" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
     <div class="mobile-nav-header">
-      <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="180">
+      <img decoding="async" src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="180">
     </div>
     <nav class="mobile-nav-links">
       <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
@@ -79,7 +82,7 @@
        2. SERVICES PAGE HERO BANNER
        ========================================================================== -->
   <section class="page-hero">
-    <img src="assets/images/services/service-dinein.jpg" alt="Dining Room Atmosphere" class="page-hero-bg">
+    <img decoding="async" src="assets/images/services/service-dinein.jpg" alt="Dining Room Atmosphere" class="page-hero-bg">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-content">
       <span class="font-script-accent">Exceptional Hospitality</span>
@@ -100,7 +103,7 @@
       <div id="dinein" class="service-showcase-item">
         <div class="service-showcase-grid">
           <div class="service-img-wrapper reveal-on-scroll reveal-left">
-            <img src="assets/images/services/service-dinein.jpg" alt="Premier Luxury Dine-In Experience at Kuzzy Kitchen" loading="lazy">
+            <img decoding="async" src="assets/images/services/service-dinein.jpg" alt="Premier Luxury Dine-In Experience at Kuzzy Kitchen" loading="lazy">
           </div>
           <div class="reveal-on-scroll reveal-right">
             <span class="font-script-accent">Fine Hospitality</span>
@@ -138,7 +141,7 @@
       <div id="takeout" class="service-showcase-item">
         <div class="service-showcase-grid reverse">
           <div class="service-img-wrapper reveal-on-scroll reveal-right">
-            <img src="assets/images/services/service-takeout.jpg" alt="Artisan Eco-Friendly Takeout Packaging" loading="lazy">
+            <img decoding="async" src="assets/images/services/service-takeout.jpg" alt="Artisan Eco-Friendly Takeout Packaging" loading="lazy">
           </div>
           <div class="reveal-on-scroll reveal-left">
             <span class="font-script-accent">Artisan To-Go</span>
@@ -176,7 +179,7 @@
       <div id="delivery" class="service-showcase-item">
         <div class="service-showcase-grid">
           <div class="service-img-wrapper reveal-on-scroll reveal-left">
-            <img src="assets/images/services/service-delivery.jpg" alt="Pristine Gourmet Food Delivery" loading="lazy">
+            <img decoding="async" src="assets/images/services/service-delivery.jpg" alt="Pristine Gourmet Food Delivery" loading="lazy">
           </div>
           <div class="reveal-on-scroll reveal-right">
             <span class="font-script-accent">Direct to Door</span>
@@ -214,7 +217,7 @@
       <div id="catering" class="service-showcase-item">
         <div class="service-showcase-grid reverse">
           <div class="service-img-wrapper reveal-on-scroll reveal-right">
-            <img src="assets/images/services/service-catering.jpg" alt="Lavish Gourmet Catering Setup" loading="lazy">
+            <img decoding="async" src="assets/images/services/service-catering.jpg" alt="Lavish Gourmet Catering Setup" loading="lazy">
           </div>
           <div class="reveal-on-scroll reveal-left">
             <span class="font-script-accent">Grand Occasions</span>
@@ -252,7 +255,7 @@
       <div id="events" class="service-showcase-item">
         <div class="service-showcase-grid">
           <div class="service-img-wrapper reveal-on-scroll reveal-left">
-            <img src="assets/images/services/service-events.jpg" alt="Exclusive Private Dining & Celebration Banquet" loading="lazy">
+            <img decoding="async" src="assets/images/services/service-events.jpg" alt="Exclusive Private Dining & Celebration Banquet" loading="lazy">
           </div>
           <div class="reveal-on-scroll reveal-right">
             <span class="font-script-accent">VIP Celebrations</span>
@@ -324,7 +327,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="200">
+          <img decoding="async" src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="200">
           <p>Bold flavors. Beautiful moments. Crafted with passion. Fine dining elevated for modern culinary connoisseurs.</p>
           <div class="social-links">
             <a href="#instagram" class="social-link-btn" aria-label="Instagram">
@@ -479,7 +482,7 @@
   </button>
 
   <!-- Scripts -->
-  <script src="js/main.js"></script>
-  <script src="js/reservation-modal.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/reservation-modal.js"></script>
 </body>
 </html>

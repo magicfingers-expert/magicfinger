@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1E1E1E"/>
+        <stop offset="100%" stop-color="#121212"/>
+      </linearGradient>
+      <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+        <stop offset="0%" stop-color="rgba(212,175,55,0.18)"/>
+        <stop offset="100%" stop-color="transparent"/>
+      </radialGradient>
+    </defs>
+    <rect width="800" height="600" fill="url(#bg)"/>
+    <rect width="800" height="600" fill="url(#glow)"/>
+    <circle cx="400" cy="270" r="110" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <circle cx="400" cy="270" r="90" fill="rgba(212,175,55,0.08)"/>
+    <path d="M370 270 L430 270 M400 240 L400 300" stroke="#F3E5AB" stroke-width="2" stroke-linecap="round"/>
+    <text x="400" y="430" font-family="'Cinzel', serif" font-size="28" font-weight="700" fill="#F7F4EE" text-anchor="middle" letter-spacing="2">Artisan Gourmet Sandwich</text>
+    <text x="400" y="470" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D4AF37" text-anchor="middle" letter-spacing="3">HANDCRAFTED PERFECTION</text>
+  </svg>
