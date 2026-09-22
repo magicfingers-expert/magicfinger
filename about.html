@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Magic Finger | Digital Architecture &amp; Engineering Studio</title>
-  <meta name="description" content="Discover the philosophy, technical rigor, and 24 service disciplines behind Magic Finger. Full-stack development, AI automation, and high-performance server clusters.">
+  <title>About Kuzzy Kitchen | Our Story &amp; Culinary Philosophy</title>
+  <meta name="description" content="Discover the heritage, passion, and culinary philosophy behind Kuzzy Kitchen. Meet our master chefs and explore our luxury dining ambiance.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-compact.svg">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Italianno&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Italianno&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.css">
@@ -19,37 +22,24 @@
 <body>
 
   <!-- ==========================================================================
-       1. STICKY LUXURY HEADER
+       1. STICKY HEADER
        ========================================================================== -->
   <header class="site-header">
     <div class="header-container">
-      <!-- Brand Logo -->
-      <a href="index.html" class="site-logo" aria-label="Magic Finger Home">
-        <div class="logo-symbol" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; margin-right: 0.75rem;">
-          <svg width="24" height="24" viewBox="0 0 36 36" fill="none">
-            <path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M18 9V18M18 18L26 23M18 18L10 23" stroke="#F7941D" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="18" cy="18" r="3.5" fill="#FDE8B3" />
-          </svg>
-        </div>
-        <div style="display: flex; flex-direction: column;">
-          <span style="font-family: var(--font-serif-display); font-size: 1.35rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-cream); line-height: 1;">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
-          <span style="font-size: 0.68rem; font-family: var(--font-sans); color: var(--color-accent-gold); letter-spacing: 0.22em; text-transform: uppercase;">Engineering Studio</span>
-        </div>
+      <a href="index.html" class="site-logo" aria-label="Kuzzy Kitchen Home">
+        <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen Logo" width="220" height="55">
       </a>
 
-      <!-- Desktop Navigation -->
       <nav class="desktop-nav" aria-label="Main Navigation">
-        <a href="index.html" class="nav-link ">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link active">About Us</a>
-        <a href="services.html" class="nav-link ">Our Service</a>
-        <a href="contact.html" class="nav-link ">Contact Us</a>
+        <a href="services.html" class="nav-link">Our Service</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
       </nav>
 
-      <!-- Header CTA & Mobile Toggle -->
       <div class="header-actions">
-        <button type="button" class="btn btn-primary btn-sm js-open-reservation" aria-label="Request a Project Quote">
-          <span>Get a Quote</span>
+        <button type="button" class="btn btn-primary btn-sm js-open-reservation" aria-label="Open Table Reservation Form">
+          <span>Reserve a Table</span>
           <span class="btn-icon-right">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
@@ -64,44 +54,39 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
+  <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-overlay" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
     <div class="mobile-nav-header">
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <div style="width: 38px; height: 38px; border-radius: 6px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; display: flex; align-items: center; justify-content: center;">
-          <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2"/><circle cx="18" cy="18" r="3" fill="#FDE8B3"/></svg>
-        </div>
-        <span style="font-family: var(--font-serif-display); font-size: 1.25rem; font-weight: 800; color: var(--color-cream);">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
-      </div>
+      <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="180">
     </div>
     <nav class="mobile-nav-links">
-      <a href="index.html" class="mobile-nav-link ">Home <span>→</span></a>
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
       <a href="about.html" class="mobile-nav-link active">About Us <span>→</span></a>
-      <a href="services.html" class="mobile-nav-link ">Our Service <span>→</span></a>
-      <a href="contact.html" class="mobile-nav-link ">Contact Us <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link">Our Service <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us <span>→</span></a>
     </nav>
     <div class="mobile-nav-footer">
       <div class="mobile-nav-info">
-        <p><strong>Email:</strong> thomashammed3@gmail.com</p>
-        <p><strong>Studio:</strong> 750 7th Ave, New York, NY 10019</p>
+        <p><strong>Hours:</strong> Mon–Sun: 11:00 AM – 10:00 PM</p>
+        <p><strong>Inquiries:</strong> hello@kuzzykitchen.com</p>
       </div>
-      <button type="button" class="btn btn-primary btn-full js-open-reservation" style="width: 100%;">Get a Quote</button>
+      <button type="button" class="btn btn-primary btn-full js-open-reservation" style="width: 100%;">Reserve a Table</button>
     </div>
   </aside>
 
   <!-- ==========================================================================
-       2. PAGE HERO BANNER
+       2. ABOUT PAGE HERO BANNER
        ========================================================================== -->
   <section class="page-hero">
-    <img src="assets/images/hero/hero-web-dev.jpg" alt="Magic Finger Engineering Studio in Action" class="page-hero-bg">
+    <img src="assets/images/about/culinary-team.jpg" alt="Kuzzy Kitchen Culinary Team in Action" class="page-hero-bg">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-content">
       <span class="font-script-accent">Our Heritage &amp; Craft</span>
       <span class="eyebrow-badge">Who We Are</span>
-      <h1 class="page-hero-title">About Magic Finger</h1>
+      <h1 class="page-hero-title">Our Story</h1>
       <div class="gold-decor-line"><div class="diamond"></div></div>
-      <p class="page-hero-subtitle">“Surgical precision in every line of code.”</p>
+      <p class="page-hero-subtitle">“Passion on every plate.”</p>
     </div>
   </section>
 
@@ -113,38 +98,37 @@
       <div class="about-story-grid">
         <!-- Story Copy -->
         <div class="reveal-on-scroll reveal-left">
-          <span class="font-script-accent">The Philosophy</span>
-          <span class="eyebrow-badge">Artisan Engineering</span>
-          <h2>One Master Studio.<br>Six Digital Frontiers.</h2>
+          <span class="font-script-accent">The Beginning</span>
+          <span class="eyebrow-badge">Artisan Genesis</span>
+          <h2>A Pursuit of Culinary Perfection</h2>
           <div class="gold-decor-line align-left"><div class="diamond"></div></div>
           
           <p class="p-lead" style="margin-bottom: 1.5rem;">
-            Founded with a vision to redefine high-end technical execution, Magic Finger operates as an elite software engineering studio uniting full-stack development, AI automation, game modding, and server DevOps.
+            Founded with a vision to redefine luxury dining, Kuzzy Kitchen began as an intimate dialogue between classic culinary techniques and bold modern flavor profiles.
           </p>
 
           <p style="margin-bottom: 1.5rem;">
-            We believe that software engineering should be treated with the same uncompromising discipline as fine artisanal watchmaking. From microsecond-level bot response loops to sub-50ms web page loads, every architecture is engineered for measurable real-world performance.
+            We believe that extraordinary dining isn't merely about sustenance—it is a sensory ritual that awakens memory and unites people. From our custom-built wood ember grills to our artisan fermentation and baking programs, each element of our menu reflects uncompromised respect for craftsmanship.
           </p>
 
           <p style="margin-bottom: 2rem;">
-            Clients across North America, Europe, and Asia trust Magic Finger for bespoke digital products that convert visitors, automate complex workflows, and run 24/7 without downtime.
+            Whether savoring our signature burger, crafted with 28-day dry-aged beef, or experiencing our handcrafted desserts dusted with edible gold, our guests discover a standard of excellence that lingers long after the final course.
           </p>
 
           <div class="menu-boxed-container" style="padding: 1.5rem;">
             <p style="color: var(--color-cream); font-style: italic; font-size: 0.95rem;">
-              “We build not to create bloated code, but to solve real challenges. Every endpoint, database query, and shader script serves an explicit, measurable purpose.”
+              “We cook not to impress, but to connect. Every ingredient possesses a story, and our role is simply to give it voice.”
             </p>
-            <div style="margin-top: 1rem; display: flex; align-items: center; justify-content: space-between;">
-              <span style="color: var(--color-accent-gold); font-family: var(--font-serif-display); font-size: 0.9rem;">— Magic Finger Lead Architect</span>
-              <span style="color: var(--color-text-muted); font-size: 0.8rem;">New York Studio</span>
-            </div>
+            <p style="color: var(--color-accent-orange); font-size: 0.85rem; font-weight: 700; margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.1em;">
+              — Executive Head Chef, Kuzzy Kitchen
+            </p>
           </div>
         </div>
 
-        <!-- Visual Composition -->
-        <div class="about-visual-column reveal-on-scroll reveal-right">
-          <div class="about-image-frame">
-            <img src="assets/images/portfolio/nextjs-saas-dashboard.jpg" alt="Magic Finger Engineering Dashboard" class="about-image-main">
+        <!-- Story Image Frame -->
+        <div class="reveal-on-scroll reveal-right">
+          <div class="about-img-frame">
+            <img src="assets/images/about/chef-plating.jpg" alt="Executive Chef plating fine dining course at Kuzzy Kitchen">
           </div>
         </div>
       </div>
@@ -152,192 +136,406 @@
   </section>
 
   <!-- ==========================================================================
-       4. FOUR CORE ENGINEERING PILLARS
+       4. OUR MISSION & CULINARY PHILOSOPHY
        ========================================================================== -->
   <section class="section-spacing" style="background-color: #171717;">
     <div class="container">
       <div class="section-header reveal-on-scroll">
-        <span class="font-script-accent">Our Disciplines</span>
-        <span class="eyebrow-badge">Pillars of Excellence</span>
-        <h2>The Four Engineering Pillars</h2>
+        <span class="font-script-accent">Guiding Principles</span>
+        <span class="eyebrow-badge">Our Mission</span>
+        <h2>Our Culinary Philosophy</h2>
         <div class="gold-decor-line"><div class="diamond"></div></div>
+        <p>Our commitment rests upon three foundational pillars that define every dish leaving our kitchen.</p>
       </div>
 
-      <div class="grid-2">
-        <div class="menu-boxed-container reveal-on-scroll" style="padding: 2.5rem;">
-          <h3 style="font-size: 1.35rem; color: var(--color-cream); margin-bottom: 0.75rem;">1. Clean Modular Architecture</h3>
-          <p style="color: var(--color-text-secondary); line-height: 1.7; font-size: 0.95rem;">
-            Strict typing, decoupled modular design patterns, and self-documenting code across TypeScript, Python, Java, and modern frameworks.
-          </p>
+      <div class="philosophy-grid">
+        <!-- Pillar 1 -->
+        <div class="philosophy-card reveal-on-scroll delay-1">
+          <div class="philosophy-number">01</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--color-cream);">Uncompromising Sourcing</h3>
+          <p>We partner exclusively with sustainable organic farmers, heritage grain millers, and certified ethical cattle ranchers to secure pristine ingredients.</p>
         </div>
 
-        <div class="menu-boxed-container reveal-on-scroll" style="padding: 2.5rem;">
-          <h3 style="font-size: 1.35rem; color: var(--color-cream); margin-bottom: 0.75rem;">2. Extreme Low Latency</h3>
-          <p style="color: var(--color-text-secondary); line-height: 1.7; font-size: 0.95rem;">
-            From sub-140ms global TTFB response times to sub-50ms sniper checkout bots, speed is engineered down to the millisecond.
-          </p>
+        <!-- Pillar 2 -->
+        <div class="philosophy-card reveal-on-scroll delay-2">
+          <div class="philosophy-number">02</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--color-cream);">From-Scratch Artistry</h3>
+          <p>Every demi-glace, slow-fermented brioche dough, smoked sea salt, and custom condiment is produced in-house with patient precision.</p>
         </div>
 
-        <div class="menu-boxed-container reveal-on-scroll" style="padding: 2.5rem;">
-          <h3 style="font-size: 1.35rem; color: var(--color-cream); margin-bottom: 0.75rem;">3. Hardened Security &amp; Uptime</h3>
-          <p style="color: var(--color-text-secondary); line-height: 1.7; font-size: 0.95rem;">
-            Zero-trust Linux server hardening, automated multi-node failover, and Anycast Anti-DDoS mitigation filters standard on all deployments.
-          </p>
-        </div>
-
-        <div class="menu-boxed-container reveal-on-scroll" style="padding: 2.5rem;">
-          <h3 style="font-size: 1.35rem; color: var(--color-cream); margin-bottom: 0.75rem;">4. Full Operational Lifecycle</h3>
-          <p style="color: var(--color-text-secondary); line-height: 1.7; font-size: 0.95rem;">
-            From initial Figma wireframe prototyping to CI/CD container deployment and post-launch maintenance, we handle the complete lifecycle.
-          </p>
+        <!-- Pillar 3 -->
+        <div class="philosophy-card reveal-on-scroll delay-3">
+          <div class="philosophy-number">03</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--color-cream);">Harmonious Presentation</h3>
+          <p>We approach plating as visual poetry. Vibrant natural colors, geometric balance, and warm amber illumination elevate your meal into art.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       GLOBAL LUXURY FOOTER
+       5. CHEF & CULINARY TEAM SPOTLIGHT
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="font-script-accent">The Masters</span>
+        <span class="eyebrow-badge">Culinary Leadership</span>
+        <h2>Meet Our Culinary Team</h2>
+        <div class="gold-decor-line"><div class="diamond"></div></div>
+        <p>Passionate artists devoted to the craft of exceptional taste and hospitality.</p>
+      </div>
+
+      <div class="grid-3" style="max-width: 1050px; margin: 0 auto;">
+        
+        <!-- Chef 1 -->
+        <div class="team-card reveal-on-scroll delay-1">
+          <img src="assets/images/about/chef-portrait.jpg" alt="Executive Head Chef Portrait" class="team-card__img" loading="lazy">
+          <div class="team-card__info">
+            <h3 class="team-card__name">Marcus Vance</h3>
+            <p class="team-card__role">Executive Head Chef</p>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted);">Trained in Paris and Tokyo, Chef Marcus fuses classical French precision with contemporary open-flame mastery.</p>
+          </div>
+        </div>
+
+        <!-- Chef 2 -->
+        <div class="team-card reveal-on-scroll delay-2">
+          <img src="assets/images/about/pastry-chef.jpg" alt="Lead Pastry Chef Portrait" class="team-card__img" loading="lazy">
+          <div class="team-card__info">
+            <h3 class="team-card__name">Elena Rossi</h3>
+            <p class="team-card__role">Master Pastry Chef</p>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted);">Renowned for structural confections and chocolate tempering, Elena crafts the showpiece desserts of Kuzzy Kitchen.</p>
+          </div>
+        </div>
+
+        <!-- Team in Action -->
+        <div class="team-card reveal-on-scroll delay-3">
+          <img src="assets/images/about/culinary-team.jpg" alt="Culinary Team in Kitchen" class="team-card__img" loading="lazy">
+          <div class="team-card__info">
+            <h3 class="team-card__name">Kitchen Brigade</h3>
+            <p class="team-card__role">Culinary Artisans</p>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted);">A tight-knit ensemble of dedicated line chefs and apprentices operating with synchronized harmony every service.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. RESTAURANT ATMOSPHERE GALLERY (Interactive Lightbox)
+       ========================================================================== -->
+  <section class="section-spacing" style="background-color: #171717;">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="font-script-accent">Intimate Space</span>
+        <span class="eyebrow-badge">Visual Tour</span>
+        <h2>Restaurant Atmosphere</h2>
+        <div class="gold-decor-line"><div class="diamond"></div></div>
+        <p>Step inside our warm charcoal sanctuary designed with soft amber acoustics and luxurious seating.</p>
+      </div>
+
+      <div class="atmosphere-gallery-grid">
+        <!-- Photo 1 -->
+        <div class="gallery-item reveal-on-scroll delay-1" data-caption="Warm Atmospheric Dining Hall with Ambient Glow">
+          <img src="assets/images/about/atmosphere-1.jpg" alt="Atmospheric Dining Room" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+            </div>
+            <h4 style="font-size: 1rem; color: #fff;">Dining Hall</h4>
+            <p style="font-size: 0.8rem; color: var(--color-accent-gold);">Click to expand</p>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item reveal-on-scroll delay-2" data-caption="Luxury Amber Cocktail Bar &amp; Cellar Reserve">
+          <img src="assets/images/about/atmosphere-2.jpg" alt="Amber Cocktail Bar Lounge" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+            </div>
+            <h4 style="font-size: 1rem; color: #fff;">Cocktail Bar</h4>
+            <p style="font-size: 0.8rem; color: var(--color-accent-gold);">Click to expand</p>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item reveal-on-scroll delay-3" data-caption="Candlelit Dining Table Setting for Intimate Evenings">
+          <img src="assets/images/about/atmosphere-3.jpg" alt="Candlelit Table Setting" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+            </div>
+            <h4 style="font-size: 1rem; color: #fff;">Table Setting</h4>
+            <p style="font-size: 0.8rem; color: var(--color-accent-gold);">Click to expand</p>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-item reveal-on-scroll delay-4" data-caption="Private Lounge Booth and Romantic Corner">
+          <img src="assets/images/about/atmosphere-4.jpg" alt="Romantic Dining Corner" loading="lazy">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+            </div>
+            <h4 style="font-size: 1rem; color: #fff;">Lounge Booth</h4>
+            <p style="font-size: 0.8rem; color: var(--color-accent-gold);">Click to expand</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CORE VALUES (4 Feature Pillars)
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="font-script-accent">Our Bedrock</span>
+        <span class="eyebrow-badge">Core Values</span>
+        <h2>What Guides Every Service</h2>
+        <div class="gold-decor-line"><div class="diamond"></div></div>
+      </div>
+
+      <div class="grid-4">
+        <div class="feature-card reveal-on-scroll delay-1">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="feature-title">Quality</h3>
+          <p class="feature-desc">Zero compromise on freshness, cut integrity, cooking technique, or food safety standards.</p>
+        </div>
+
+        <div class="feature-card reveal-on-scroll delay-2">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <h3 class="feature-title">Passion</h3>
+          <p class="feature-desc">Genuine dedication that transforms simple dining into heartfelt hospitality and memorable joy.</p>
+        </div>
+
+        <div class="feature-card reveal-on-scroll delay-3">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-title">Hospitality</h3>
+          <p class="feature-desc">Attentive warmth where every guest is honored with bespoke care and prompt graciousness.</p>
+        </div>
+
+        <div class="feature-card reveal-on-scroll delay-4">
+          <div class="feature-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 class="feature-title">Creativity</h3>
+          <p class="feature-desc">Constant culinary evolution experimenting with seasonal harvests, spices, and visual storytelling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. FINAL ABOUT CTA
+       ========================================================================== -->
+  <section class="section-spacing" style="background-color: #1a1a1a;">
+    <div class="container container-narrow">
+      <div class="menu-boxed-container reveal-on-scroll" style="text-align: center;">
+        <span class="font-script-accent">An Invitation</span>
+        <span class="eyebrow-badge">Experience It Yourself</span>
+        <h2>Come Experience Kuzzy Kitchen</h2>
+        <div class="gold-decor-line"><div class="diamond"></div></div>
+        <p class="p-lead" style="margin-bottom: 2.2rem;">
+          Join us for an evening of remarkable flavors, vintage wine pairings, and unmatched culinary ambiance.
+        </p>
+        <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+          <button type="button" class="btn btn-primary btn-lg js-open-reservation">
+            <span>Reserve a Table</span>
+            <span class="btn-icon-right">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </button>
+          <a href="contact.html" class="btn btn-secondary btn-lg">
+            <span>Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. FOOTER
        ========================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div class="footer-brand">
-          <div class="site-logo" style="margin-bottom: 1.25rem;">
-            <div class="logo-symbol" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 6px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; margin-right: 0.75rem;">
-              <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2"/><circle cx="18" cy="18" r="3" fill="#FDE8B3"/></svg>
-            </div>
-            <span style="font-family: var(--font-serif-display); font-size: 1.25rem; font-weight: 800; color: var(--color-cream);">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
+          <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="200">
+          <p>Bold flavors. Beautiful moments. Crafted with passion. Fine dining elevated for modern culinary connoisseurs.</p>
+          <div class="social-links">
+            <a href="#instagram" class="social-link-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#facebook" class="social-link-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#tiktok" class="social-link-btn" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
           </div>
-          <p>
-            Master Full-Stack Web Applications, AI Automation Bots, Game Modding Engines, and High-Performance Dedicated Server Infrastructure engineered by Magic Finger.
-          </p>
         </div>
 
         <div>
-          <h4 class="footer-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Our Service</a></li>
-            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#reserve" class="js-open-reservation">Reserve Table</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Direct Services</h4>
-          <ul class="footer-links">
-            <li><a href="https://www.fiverr.com/thomastech24" target="_blank" rel="noopener noreferrer" class="footer-link">Web &amp; Shopify Plus</a></li>
-            <li><a href="https://www.fiverr.com/thomas_tech9" target="_blank" rel="noopener noreferrer" class="footer-link">AI Bots &amp; Scraping</a></li>
-            <li><a href="https://www.fiverr.com/thomastech9" target="_blank" rel="noopener noreferrer" class="footer-link">Speed Optimization 100/100</a></li>
-            <li><a href="https://www.fiverr.com/thomastech5" target="_blank" rel="noopener noreferrer" class="footer-link">Game Modding &amp; 3D</a></li>
-            <li><a href="https://www.fiverr.com/vortextech9" target="_blank" rel="noopener noreferrer" class="footer-link">Dedicated Servers (20.0 TPS)</a></li>
-            <li><a href="https://www.fiverr.com/jessicathoms18" target="_blank" rel="noopener noreferrer" class="footer-link">UI/UX &amp; Figma Systems</a></li>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#dinein">Dine-In Lounge</a></li>
+            <li><a href="services.html#takeout">Artisan Takeout</a></li>
+            <li><a href="services.html#delivery">Gourmet Delivery</a></li>
+            <li><a href="services.html#catering">Event Catering</a></li>
+            <li><a href="services.html#events">Private Banquets</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Contact Studio</h4>
+          <h4 class="footer-heading">Contact &amp; Hours</h4>
           <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            <div>
-              <span style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-gold); font-weight: 600;">Email Inquiries</span>
-              <a href="mailto:thomashammed3@gmail.com" class="footer-link" style="color: var(--color-cream); font-weight: 500;">thomashammed3@gmail.com</a>
-            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(000) 000-0000</span>
           </div>
-          <div class="footer-contact-item" style="margin-top: 1rem;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div>
-              <span style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-gold); font-weight: 600;">New York Studio</span>
-              <address style="font-style: normal; color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.4;">
-                750 7th Avenue, Suite 1900<br>New York, NY 10019
-              </address>
-            </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@kuzzykitchen.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Restaurant Address, Fine Dining District</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sun: 11:00 AM – 10:00 PM</span>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 Magic Finger. All rights reserved.</span>
-        <span>Crafted for Bespoke Digital Engineering.</span>
+        <p>&copy; 2026 Kuzzy Kitchen. All rights reserved.</p>
+        <p>Crafted for Luxury Dining Experiences.</p>
       </div>
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       INTERACTIVE QUOTE & DISPATCH MODAL
-       ========================================================================== -->
-  <div class="modal-backdrop" id="reservationModal" aria-hidden="true">
-    <div class="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <!-- Lightbox Modal for Atmosphere Gallery -->
+  <div class="lightbox-modal" aria-hidden="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-img-wrapper">
+      <img src="" alt="Fullscreen Gallery Preview" class="lightbox-img">
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Global Reservation Modal -->
+  <div class="modal-backdrop reservation-modal-backdrop" aria-hidden="true">
+    <div class="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleAbout">
+      <button type="button" class="modal-close-btn" aria-label="Close Reservation Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
       <div class="modal-header">
-        <div>
-          <span class="font-script-accent" style="font-size: 2rem;">Direct Dispatch</span>
-          <h3 id="modalTitle" style="font-size: 1.5rem; color: var(--color-cream);">Request Project Proposal</h3>
-        </div>
-        <button type="button" class="modal-close-btn js-close-reservation" aria-label="Close modal">&times;</button>
+        <span class="font-script-accent">Book Your Table</span>
+        <h3 id="modalTitleAbout" class="modal-title">Experience Kuzzy Kitchen</h3>
+        <p class="modal-subtitle">Reserve your table for an unforgettable dining experience.</p>
       </div>
-      
-      <form class="reservation-form" id="projectProposalForm">
-        <div class="grid-2">
-          <div class="form-group">
-            <label class="form-label" for="quoteName">Your Full Name</label>
-            <input type="text" id="quoteName" class="form-input" placeholder="e.g. Alexander Vance" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="quoteEmail">Work Email Address</label>
-            <input type="email" id="quoteEmail" class="form-input" placeholder="alexander@company.com" required>
-          </div>
-        </div>
 
-        <div class="grid-2">
+      <form id="reservationForm">
+        <div class="form-grid">
           <div class="form-group">
-            <label class="form-label" for="quoteService">Selected Service</label>
-            <select id="quoteService" class="form-input" required>
-              <option value="Web Development & Shopify Plus">Web Apps &amp; Shopify Plus</option>
-              <option value="AI Bots & Web Scraping">AI Bots &amp; Web Scraping</option>
-              <option value="Speed Optimization 100/100">Speed Optimization 100/100</option>
-              <option value="Game Modding & Physics">Game Modding &amp; Engines</option>
-              <option value="Dedicated Game Server 20.0 TPS">Dedicated Servers (20.0 TPS)</option>
-              <option value="Figma UI/UX & Design Tokens">UI/UX &amp; Figma Tokens</option>
+            <label for="resName" class="form-label">Full Name *</label>
+            <input type="text" id="resName" class="luxury-input" placeholder="e.g. Eleanor Vance" required>
+          </div>
+          <div class="form-group">
+            <label for="resPhone" class="form-label">Phone Number *</label>
+            <input type="tel" id="resPhone" class="luxury-input" placeholder="(000) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="resEmail" class="form-label">Email Address *</label>
+            <input type="email" id="resEmail" class="luxury-input" placeholder="eleanor@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="resGuests" class="form-label">Number of Guests *</label>
+            <select id="resGuests" class="luxury-select" required>
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7+">7+ Guests (Private Event)</option>
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label" for="quoteBudget">Estimated Budget (USD)</label>
-            <select id="quoteBudget" class="form-input">
-              <option value="$100 - $300">$100 – $300 (Standard Gig)</option>
-              <option value="$300 - $800">$300 – $800 (Custom Build)</option>
-              <option value="$800 - $2,500">$800 – $2,500 (Enterprise Solution)</option>
-              <option value="$2,500+">$2,500+ (Full Infrastructure)</option>
+            <label for="resDate" class="form-label">Dining Date *</label>
+            <input type="date" id="resDate" class="luxury-input" required>
+          </div>
+          <div class="form-group">
+            <label for="resType" class="form-label">Seating Experience</label>
+            <select id="resType" class="luxury-select">
+              <option value="Main Dining Room">Main Dining Room</option>
+              <option value="Intimate Lounge Booth">Intimate Lounge Booth</option>
+              <option value="Chef's Counter View">Chef's Counter View</option>
+              <option value="Private Banquet Suite">Private Banquet Suite</option>
             </select>
+          </div>
+          
+          <div class="form-group form-group-full">
+            <label class="form-label">Select Seating Time Slot</label>
+            <div class="time-slots-grid">
+              <button type="button" class="time-slot-btn" data-time="5:00 PM">5:00 PM</button>
+              <button type="button" class="time-slot-btn" data-time="5:45 PM">5:45 PM</button>
+              <button type="button" class="time-slot-btn is-selected" data-time="6:30 PM">6:30 PM</button>
+              <button type="button" class="time-slot-btn" data-time="7:15 PM">7:15 PM</button>
+              <button type="button" class="time-slot-btn" data-time="8:00 PM">8:00 PM</button>
+              <button type="button" class="time-slot-btn" data-time="8:45 PM">8:45 PM</button>
+              <button type="button" class="time-slot-btn" data-time="9:30 PM">9:30 PM</button>
+              <button type="button" class="time-slot-btn" data-time="10:00 PM">10:00 PM</button>
+            </div>
+            <input type="hidden" id="resTime" value="6:30 PM">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="resNotes" class="form-label">Dietary &amp; Special Requests</label>
+            <textarea id="resNotes" class="luxury-textarea" placeholder="Anniversary celebration, dietary preferences..."></textarea>
           </div>
         </div>
 
-        <div class="form-group">
-          <label class="form-label" for="quoteMessage">Project Requirements &amp; Target Timeline</label>
-          <textarea id="quoteMessage" class="form-textarea" rows="4" placeholder="Detail your project specifications, keywords, and timeline requirements..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-full">
-          <span>Dispatch Proposal Request</span>
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          <span>Confirm Table Reservation</span>
           <span class="btn-icon-right">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </button>
       </form>
     </div>
   </div>
 
-  <!-- Fullscreen Proof Lightbox Modal -->
-  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Screenshot Proof Lightbox">
-    <div class="lightbox-content">
-      <button type="button" class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
-      <img src="" alt="Verified Production Screenshot" class="lightbox-img">
-      <div class="lightbox-caption">
-        <h4 class="lightbox-caption-title">Case Study Screenshot</h4>
-        <p class="lightbox-caption-desc">Full resolution in-site production screenshot.</p>
-      </div>
-    </div>
-  </div>
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
+  <!-- Scripts -->
   <script src="js/main.js"></script>
+  <script src="js/reservation-modal.js"></script>
+  <script src="js/gallery-lightbox.js"></script>
 </body>
 </html>

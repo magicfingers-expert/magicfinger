@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Magic Finger | Project Dispatch &amp; Inquiries</title>
-  <meta name="description" content="Get in direct contact with Magic Finger. Request custom quotes for Web Development, AI Bots, Speed Optimization, Game Modding, and Server Clusters.">
+  <title>Contact Kuzzy Kitchen | Reservations &amp; Information</title>
+  <meta name="description" content="Get in touch with Kuzzy Kitchen. Inquire about reservations, private dining banquets, catering, or send us a message.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-compact.svg">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Italianno&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Italianno&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.css">
@@ -19,37 +22,24 @@
 <body>
 
   <!-- ==========================================================================
-       1. STICKY LUXURY HEADER
+       1. STICKY HEADER
        ========================================================================== -->
   <header class="site-header">
     <div class="header-container">
-      <!-- Brand Logo -->
-      <a href="index.html" class="site-logo" aria-label="Magic Finger Home">
-        <div class="logo-symbol" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; margin-right: 0.75rem;">
-          <svg width="24" height="24" viewBox="0 0 36 36" fill="none">
-            <path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M18 9V18M18 18L26 23M18 18L10 23" stroke="#F7941D" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="18" cy="18" r="3.5" fill="#FDE8B3" />
-          </svg>
-        </div>
-        <div style="display: flex; flex-direction: column;">
-          <span style="font-family: var(--font-serif-display); font-size: 1.35rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-cream); line-height: 1;">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
-          <span style="font-size: 0.68rem; font-family: var(--font-sans); color: var(--color-accent-gold); letter-spacing: 0.22em; text-transform: uppercase;">Engineering Studio</span>
-        </div>
+      <a href="index.html" class="site-logo" aria-label="Kuzzy Kitchen Home">
+        <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen Logo" width="220" height="55">
       </a>
 
-      <!-- Desktop Navigation -->
       <nav class="desktop-nav" aria-label="Main Navigation">
-        <a href="index.html" class="nav-link ">Home</a>
-        <a href="about.html" class="nav-link ">About Us</a>
-        <a href="services.html" class="nav-link ">Our Service</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Our Service</a>
         <a href="contact.html" class="nav-link active">Contact Us</a>
       </nav>
 
-      <!-- Header CTA & Mobile Toggle -->
       <div class="header-actions">
-        <button type="button" class="btn btn-primary btn-sm js-open-reservation" aria-label="Request a Project Quote">
-          <span>Get a Quote</span>
+        <button type="button" class="btn btn-primary btn-sm js-open-reservation" aria-label="Open Table Reservation Form">
+          <span>Reserve a Table</span>
           <span class="btn-icon-right">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
@@ -64,269 +54,424 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
+  <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-overlay" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
     <div class="mobile-nav-header">
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <div style="width: 38px; height: 38px; border-radius: 6px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; display: flex; align-items: center; justify-content: center;">
-          <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2"/><circle cx="18" cy="18" r="3" fill="#FDE8B3"/></svg>
-        </div>
-        <span style="font-family: var(--font-serif-display); font-size: 1.25rem; font-weight: 800; color: var(--color-cream);">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
-      </div>
+      <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="180">
     </div>
     <nav class="mobile-nav-links">
-      <a href="index.html" class="mobile-nav-link ">Home <span>→</span></a>
-      <a href="about.html" class="mobile-nav-link ">About Us <span>→</span></a>
-      <a href="services.html" class="mobile-nav-link ">Our Service <span>→</span></a>
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link">Our Service <span>→</span></a>
       <a href="contact.html" class="mobile-nav-link active">Contact Us <span>→</span></a>
     </nav>
     <div class="mobile-nav-footer">
       <div class="mobile-nav-info">
-        <p><strong>Email:</strong> thomashammed3@gmail.com</p>
-        <p><strong>Studio:</strong> 750 7th Ave, New York, NY 10019</p>
+        <p><strong>Hours:</strong> Mon–Sun: 11:00 AM – 10:00 PM</p>
+        <p><strong>Inquiries:</strong> hello@kuzzykitchen.com</p>
       </div>
-      <button type="button" class="btn btn-primary btn-full js-open-reservation" style="width: 100%;">Get a Quote</button>
+      <button type="button" class="btn btn-primary btn-full js-open-reservation" style="width: 100%;">Reserve a Table</button>
     </div>
   </aside>
 
   <!-- ==========================================================================
-       2. PAGE HERO BANNER
+       2. CONTACT PAGE HERO BANNER
        ========================================================================== -->
   <section class="page-hero">
-    <img src="assets/images/hero/hero-game-server.jpg" alt="Contact Magic Finger Studio" class="page-hero-bg">
+    <img src="assets/images/contact/contact-hero.jpg" alt="Kuzzy Kitchen Welcoming Lounge" class="page-hero-bg">
     <div class="page-hero-overlay"></div>
     <div class="container page-hero-content">
-      <span class="font-script-accent">Direct Reach</span>
-      <span class="eyebrow-badge">Get In Touch</span>
-      <h1 class="page-hero-title">Contact Magic Finger</h1>
+      <span class="font-script-accent">Concierge &amp; Inquiries</span>
+      <span class="eyebrow-badge">Connect With Us</span>
+      <h1 class="page-hero-title">Get In Touch</h1>
       <div class="gold-decor-line"><div class="diamond"></div></div>
-      <p class="page-hero-subtitle">“Let's turn your vision into high-performing reality.”</p>
+      <p class="page-hero-subtitle">“We'd love to hear from you. Our culinary concierge is at your service.”</p>
     </div>
   </section>
 
   <!-- ==========================================================================
-       3. CONTACT SECTION & DIRECT DISPATCH FORM
+       3. CONTACT FORM & INFORMATION CARDS (Two-Column Layout)
        ========================================================================== -->
   <section class="section-spacing">
     <div class="container">
-      <div class="about-story-grid">
-        <!-- Studio Info -->
-        <div class="reveal-on-scroll reveal-left">
-          <span class="font-script-accent">Direct Communication</span>
-          <span class="eyebrow-badge">Connect</span>
-          <h2>Let's Discuss Your Project</h2>
-          <div class="gold-decor-line align-left"><div class="diamond"></div></div>
-          
-          <p class="p-lead" style="margin-bottom: 1.5rem;">
-            Whether you require an immediate gig booking or a complex multi-stage custom build, Magic Finger provides 1-on-1 engineer communication and rapid delivery.
-          </p>
+      <div class="contact-main-grid">
+        
+        <!-- Left: Interactive Contact Form -->
+        <div class="menu-boxed-container reveal-on-scroll reveal-left">
+          <span class="font-script-accent">Send a Message</span>
+          <span class="eyebrow-badge">Direct Inquiry</span>
+          <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">We're Here to Help</h2>
+          <p style="margin-bottom: 2rem;">Please fill out the form below and our hospitality director will contact you promptly.</p>
 
-          <div class="menu-boxed-container" style="padding: 1.5rem; margin-bottom: 1.5rem;">
-            <h4 style="color: var(--color-cream); font-size: 1.1rem; margin-bottom: 0.35rem;">Studio Email</h4>
-            <a href="mailto:thomashammed3@gmail.com" style="color: var(--color-accent-gold); font-size: 0.95rem; text-decoration: none;">thomashammed3@gmail.com</a>
-            <p style="color: var(--color-text-muted); font-size: 0.8rem; margin-top: 0.35rem;">Average turnaround: Under 2 Hours</p>
-          </div>
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input type="text" id="contactName" class="luxury-input" placeholder="e.g. James Sterling" required>
+              </div>
 
-          <div class="menu-boxed-container" style="padding: 1.5rem; margin-bottom: 1.5rem;">
-            <h4 style="color: var(--color-cream); font-size: 1.1rem; margin-bottom: 0.35rem;">New York Studio</h4>
-            <p style="color: var(--color-text-light); font-size: 0.95rem;">750 7th Avenue, Suite 1900<br>New York, NY 10019</p>
-          </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" class="luxury-input" placeholder="james@example.com" required>
+              </div>
 
-          <div class="menu-boxed-container" style="padding: 1.5rem;">
-            <h4 style="color: var(--color-cream); font-size: 1.1rem; margin-bottom: 0.35rem;">Operational Hours</h4>
-            <p style="color: var(--color-text-light); font-size: 0.95rem;">24/7 Global Technical Dispatch</p>
-          </div>
-        </div>
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">Phone Number</label>
+                <input type="tel" id="contactPhone" class="luxury-input" placeholder="(000) 000-0000">
+              </div>
 
-        <!-- Contact Form -->
-        <div class="menu-boxed-container reveal-on-scroll reveal-right" style="padding: 2.5rem;">
-          <h3 style="font-size: 1.5rem; color: var(--color-cream); margin-bottom: 0.5rem;">Send Project Inquiry</h3>
-          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 2rem;">Fill out the specifications below and receive a tailored technical proposal.</p>
-          
-          <form class="reservation-form" id="contactPageForm">
-            <div class="form-group">
-              <label class="form-label" for="cName">Your Name</label>
-              <input type="text" id="cName" class="form-input" placeholder="e.g. Marcus Vance" required>
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Inquiry Subject *</label>
+                <select id="contactSubject" class="luxury-select" required>
+                  <option value="General Dining Inquiry">General Dining Inquiry</option>
+                  <option value="Table Reservation Assistance">Table Reservation Assistance</option>
+                  <option value="Private Event / Banquet">Private Event / Banquet</option>
+                  <option value="Corporate Catering">Corporate Catering</option>
+                  <option value="Chef Press & Media">Chef Press &amp; Media</option>
+                </select>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="contactMessage" class="form-label">Your Message *</label>
+                <textarea id="contactMessage" class="luxury-textarea" rows="5" placeholder="How may our culinary team assist you today?" required></textarea>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="cEmail">Your Email</label>
-              <input type="email" id="cEmail" class="form-input" placeholder="marcus@company.com" required>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="cService">Target Service Category</label>
-              <select id="cService" class="form-input" required>
-                <option value="Web Apps & Shopify Plus">Web Apps &amp; Shopify Plus</option>
-                <option value="AI Bots & Web Scraping">AI Bots &amp; Web Scraping</option>
-                <option value="Speed Optimization 100/100">Speed Optimization 100/100</option>
-                <option value="Game Modding & Physics">Game Modding &amp; Engines</option>
-                <option value="Dedicated Game Server 20.0 TPS">Dedicated Servers (20.0 TPS)</option>
-                <option value="Figma UI/UX & Design Tokens">UI/UX &amp; Figma Tokens</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="cMessage">Project Details &amp; Requirements</label>
-              <textarea id="cMessage" class="form-textarea" rows="4" placeholder="Detail your project specifications..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-full">
-              <span>Send Project Message</span>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Send Message</span>
               <span class="btn-icon-right">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </span>
             </button>
           </form>
+        </div>
+
+        <!-- Right: Information Cards & Hours -->
+        <div class="reveal-on-scroll reveal-right">
+          
+          <!-- Card 1: Phone -->
+          <div class="contact-card-info">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <h4>Direct Telephone</h4>
+              <p style="color: var(--color-accent-orange); font-weight: 600; font-size: 1.05rem;">(000) 000-0000</p>
+              <p>Available daily from 10:00 AM for table reservations &amp; inquiries.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Email -->
+          <div class="contact-card-info">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <h4>Electronic Concierge</h4>
+              <p style="color: var(--color-accent-orange); font-weight: 600; font-size: 1.05rem;">hello@kuzzykitchen.com</p>
+              <p>For catering requests, press, and private dining bookings.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Address -->
+          <div class="contact-card-info">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <h4>Restaurant Address</h4>
+              <p style="color: var(--color-cream); font-weight: 600;">Restaurant Address, Fine Dining District</p>
+              <p>Valet parking available at the grand front entrance.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Hours -->
+          <div class="contact-card-info">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <h4>Opening Hours</h4>
+              <p style="color: var(--color-cream); font-weight: 600;">Monday – Sunday</p>
+              <p style="color: var(--color-accent-gold);">11:00 AM – 10:00 PM</p>
+              <p style="font-size: 0.8rem; margin-top: 0.3rem;">Kitchen closes 45 minutes prior to closing.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ==========================================================================
+           4. STYLED MAP / LOCATION VISUAL CARD
+           ========================================================================== -->
+      <div class="map-visual-card reveal-on-scroll">
+        <div class="map-visual-header">
+          <div>
+            <span class="eyebrow-badge" style="margin-bottom: 0.3rem;">Prime Destination</span>
+            <h3 style="font-size: 1.3rem; margin: 0;">Find Kuzzy Kitchen</h3>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <button type="button" class="btn btn-sm btn-secondary" onclick="alert('GPS Navigation Coordinates: Valet Entrance at Fine Dining District')">
+              <span>Get Directions</span>
+            </button>
+            <button type="button" class="btn btn-sm btn-primary js-open-reservation">
+              <span>Reserve Table</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="map-embed-placeholder">
+          <img src="assets/images/contact/contact-hero.jpg" alt="Map View Area" class="map-embed-bg">
+          
+          <div class="map-pin-box">
+            <div style="color: var(--color-accent-orange); margin-bottom: 0.5rem;">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <h4 style="font-size: 1.15rem; color: var(--color-cream); margin-bottom: 0.2rem;">KUZZY KITCHEN</h4>
+            <p style="font-size: 0.85rem; color: var(--color-text-muted);">Fine Dining District • Complimentary Valet</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           5. FREQUENTLY ASKED QUESTIONS ACCORDION
+           ========================================================================== -->
+      <div class="faq-accordion reveal-on-scroll">
+        <div class="section-header" style="margin-top: 4rem; margin-bottom: 2rem;">
+          <span class="font-script-accent">Helpful Information</span>
+          <span class="eyebrow-badge">FAQ</span>
+          <h2>Dining Questions Answered</h2>
+          <div class="gold-decor-line"><div class="diamond"></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger">
+            <span>What is the dress code at Kuzzy Kitchen?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-body">
+            <p>We recommend smart casual to formal attire. Athletic wear, beachwear, and flip-flops are not permitted in our main dining salon.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger">
+            <span>Can you accommodate dietary restrictions and allergies?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-body">
+            <p>Absolutely. Our culinary brigade accommodates gluten-free, dairy-free, vegetarian, and halal requests. Please specify your requirements when placing your reservation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-trigger">
+            <span>How far in advance should I book for weekend dining or private events?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-body">
+            <p>We recommend reserving 3 to 7 days in advance for weekend dinner service. For private dining suites and catering events, 2 to 3 weeks notice is preferred.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. RESERVATION CALL TO ACTION
+       ========================================================================== -->
+  <section class="section-spacing" style="background-color: #1a1a1a;">
+    <div class="container container-narrow">
+      <div class="menu-boxed-container reveal-on-scroll" style="text-align: center;">
+        <span class="font-script-accent">Join Us</span>
+        <span class="eyebrow-badge">Online Booking</span>
+        <h2>Your Table Awaits</h2>
+        <div class="gold-decor-line"><div class="diamond"></div></div>
+        <p class="p-lead" style="margin-bottom: 2.2rem;">
+          Reserve your table online in seconds and prepare to experience extraordinary culinary artistry.
+        </p>
+        <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+          <button type="button" class="btn btn-primary btn-lg js-open-reservation">
+            <span>Reserve a Table</span>
+            <span class="btn-icon-right">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </button>
+          <a href="tel:0000000000" class="btn btn-secondary btn-lg">
+            <span>Call Concierge</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       GLOBAL LUXURY FOOTER
+       7. FOOTER
        ========================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div class="footer-brand">
-          <div class="site-logo" style="margin-bottom: 1.25rem;">
-            <div class="logo-symbol" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 6px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; margin-right: 0.75rem;">
-              <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2"/><circle cx="18" cy="18" r="3" fill="#FDE8B3"/></svg>
-            </div>
-            <span style="font-family: var(--font-serif-display); font-size: 1.25rem; font-weight: 800; color: var(--color-cream);">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
+          <img src="assets/images/logo/logo-full.svg" alt="Kuzzy Kitchen" width="200">
+          <p>Bold flavors. Beautiful moments. Crafted with passion. Fine dining elevated for modern culinary connoisseurs.</p>
+          <div class="social-links">
+            <a href="#instagram" class="social-link-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#facebook" class="social-link-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#tiktok" class="social-link-btn" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
           </div>
-          <p>
-            Master Full-Stack Web Applications, AI Automation Bots, Game Modding Engines, and High-Performance Dedicated Server Infrastructure engineered by Magic Finger.
-          </p>
         </div>
 
         <div>
-          <h4 class="footer-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Our Service</a></li>
-            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#reserve" class="js-open-reservation">Reserve Table</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Direct Services</h4>
-          <ul class="footer-links">
-            <li><a href="https://www.fiverr.com/thomastech24" target="_blank" rel="noopener noreferrer" class="footer-link">Web &amp; Shopify Plus</a></li>
-            <li><a href="https://www.fiverr.com/thomas_tech9" target="_blank" rel="noopener noreferrer" class="footer-link">AI Bots &amp; Scraping</a></li>
-            <li><a href="https://www.fiverr.com/thomastech9" target="_blank" rel="noopener noreferrer" class="footer-link">Speed Optimization 100/100</a></li>
-            <li><a href="https://www.fiverr.com/thomastech5" target="_blank" rel="noopener noreferrer" class="footer-link">Game Modding &amp; 3D</a></li>
-            <li><a href="https://www.fiverr.com/vortextech9" target="_blank" rel="noopener noreferrer" class="footer-link">Dedicated Servers (20.0 TPS)</a></li>
-            <li><a href="https://www.fiverr.com/jessicathoms18" target="_blank" rel="noopener noreferrer" class="footer-link">UI/UX &amp; Figma Systems</a></li>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#dinein">Dine-In Lounge</a></li>
+            <li><a href="services.html#takeout">Artisan Takeout</a></li>
+            <li><a href="services.html#delivery">Gourmet Delivery</a></li>
+            <li><a href="services.html#catering">Event Catering</a></li>
+            <li><a href="services.html#events">Private Banquets</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Contact Studio</h4>
+          <h4 class="footer-heading">Contact &amp; Hours</h4>
           <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            <div>
-              <span style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-gold); font-weight: 600;">Email Inquiries</span>
-              <a href="mailto:thomashammed3@gmail.com" class="footer-link" style="color: var(--color-cream); font-weight: 500;">thomashammed3@gmail.com</a>
-            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(000) 000-0000</span>
           </div>
-          <div class="footer-contact-item" style="margin-top: 1rem;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div>
-              <span style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-gold); font-weight: 600;">New York Studio</span>
-              <address style="font-style: normal; color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.4;">
-                750 7th Avenue, Suite 1900<br>New York, NY 10019
-              </address>
-            </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hello@kuzzykitchen.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Restaurant Address, Fine Dining District</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon–Sun: 11:00 AM – 10:00 PM</span>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 Magic Finger. All rights reserved.</span>
-        <span>Crafted for Bespoke Digital Engineering.</span>
+        <p>&copy; 2026 Kuzzy Kitchen. All rights reserved.</p>
+        <p>Crafted for Luxury Dining Experiences.</p>
       </div>
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       INTERACTIVE QUOTE & DISPATCH MODAL
-       ========================================================================== -->
-  <div class="modal-backdrop" id="reservationModal" aria-hidden="true">
-    <div class="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <!-- Global Reservation Modal -->
+  <div class="modal-backdrop reservation-modal-backdrop" aria-hidden="true">
+    <div class="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleContact">
+      <button type="button" class="modal-close-btn" aria-label="Close Reservation Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
       <div class="modal-header">
-        <div>
-          <span class="font-script-accent" style="font-size: 2rem;">Direct Dispatch</span>
-          <h3 id="modalTitle" style="font-size: 1.5rem; color: var(--color-cream);">Request Project Proposal</h3>
-        </div>
-        <button type="button" class="modal-close-btn js-close-reservation" aria-label="Close modal">&times;</button>
+        <span class="font-script-accent">Book Your Table</span>
+        <h3 id="modalTitleContact" class="modal-title">Experience Kuzzy Kitchen</h3>
+        <p class="modal-subtitle">Reserve your table or inquiry for an unforgettable dining experience.</p>
       </div>
-      
-      <form class="reservation-form" id="projectProposalForm">
-        <div class="grid-2">
-          <div class="form-group">
-            <label class="form-label" for="quoteName">Your Full Name</label>
-            <input type="text" id="quoteName" class="form-input" placeholder="e.g. Alexander Vance" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="quoteEmail">Work Email Address</label>
-            <input type="email" id="quoteEmail" class="form-input" placeholder="alexander@company.com" required>
-          </div>
-        </div>
 
-        <div class="grid-2">
+      <form id="reservationForm">
+        <div class="form-grid">
           <div class="form-group">
-            <label class="form-label" for="quoteService">Selected Service</label>
-            <select id="quoteService" class="form-input" required>
-              <option value="Web Development & Shopify Plus">Web Apps &amp; Shopify Plus</option>
-              <option value="AI Bots & Web Scraping">AI Bots &amp; Web Scraping</option>
-              <option value="Speed Optimization 100/100">Speed Optimization 100/100</option>
-              <option value="Game Modding & Physics">Game Modding &amp; Engines</option>
-              <option value="Dedicated Game Server 20.0 TPS">Dedicated Servers (20.0 TPS)</option>
-              <option value="Figma UI/UX & Design Tokens">UI/UX &amp; Figma Tokens</option>
+            <label for="resName" class="form-label">Full Name *</label>
+            <input type="text" id="resName" class="luxury-input" placeholder="e.g. Eleanor Vance" required>
+          </div>
+          <div class="form-group">
+            <label for="resPhone" class="form-label">Phone Number *</label>
+            <input type="tel" id="resPhone" class="luxury-input" placeholder="(000) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="resEmail" class="form-label">Email Address *</label>
+            <input type="email" id="resEmail" class="luxury-input" placeholder="eleanor@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="resGuests" class="form-label">Number of Guests *</label>
+            <select id="resGuests" class="luxury-select" required>
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7+">7+ Guests (Private Event)</option>
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label" for="quoteBudget">Estimated Budget (USD)</label>
-            <select id="quoteBudget" class="form-input">
-              <option value="$100 - $300">$100 – $300 (Standard Gig)</option>
-              <option value="$300 - $800">$300 – $800 (Custom Build)</option>
-              <option value="$800 - $2,500">$800 – $2,500 (Enterprise Solution)</option>
-              <option value="$2,500+">$2,500+ (Full Infrastructure)</option>
+            <label for="resDate" class="form-label">Dining Date *</label>
+            <input type="date" id="resDate" class="luxury-input" required>
+          </div>
+          <div class="form-group">
+            <label for="resType" class="form-label">Seating Experience</label>
+            <select id="resType" class="luxury-select">
+              <option value="Main Dining Room">Main Dining Room</option>
+              <option value="Intimate Lounge Booth">Intimate Lounge Booth</option>
+              <option value="Chef's Counter View">Chef's Counter View</option>
+              <option value="Private Banquet Suite">Private Banquet Suite</option>
             </select>
+          </div>
+          
+          <div class="form-group form-group-full">
+            <label class="form-label">Select Seating Time Slot</label>
+            <div class="time-slots-grid">
+              <button type="button" class="time-slot-btn" data-time="5:00 PM">5:00 PM</button>
+              <button type="button" class="time-slot-btn" data-time="5:45 PM">5:45 PM</button>
+              <button type="button" class="time-slot-btn is-selected" data-time="6:30 PM">6:30 PM</button>
+              <button type="button" class="time-slot-btn" data-time="7:15 PM">7:15 PM</button>
+              <button type="button" class="time-slot-btn" data-time="8:00 PM">8:00 PM</button>
+              <button type="button" class="time-slot-btn" data-time="8:45 PM">8:45 PM</button>
+              <button type="button" class="time-slot-btn" data-time="9:30 PM">9:30 PM</button>
+              <button type="button" class="time-slot-btn" data-time="10:00 PM">10:00 PM</button>
+            </div>
+            <input type="hidden" id="resTime" value="6:30 PM">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="resNotes" class="form-label">Dietary &amp; Special Requests</label>
+            <textarea id="resNotes" class="luxury-textarea" placeholder="Anniversary celebration, dietary preferences..."></textarea>
           </div>
         </div>
 
-        <div class="form-group">
-          <label class="form-label" for="quoteMessage">Project Requirements &amp; Target Timeline</label>
-          <textarea id="quoteMessage" class="form-textarea" rows="4" placeholder="Detail your project specifications, keywords, and timeline requirements..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-full">
-          <span>Dispatch Proposal Request</span>
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+          <span>Confirm Table Reservation</span>
           <span class="btn-icon-right">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </button>
       </form>
     </div>
   </div>
 
-  <!-- Fullscreen Proof Lightbox Modal -->
-  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Screenshot Proof Lightbox">
-    <div class="lightbox-content">
-      <button type="button" class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
-      <img src="" alt="Verified Production Screenshot" class="lightbox-img">
-      <div class="lightbox-caption">
-        <h4 class="lightbox-caption-title">Case Study Screenshot</h4>
-        <p class="lightbox-caption-desc">Full resolution in-site production screenshot.</p>
-      </div>
-    </div>
-  </div>
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
+  <!-- Scripts -->
   <script src="js/main.js"></script>
+  <script src="js/reservation-modal.js"></script>
+  <script src="js/contact-form.js"></script>
 </body>
 </html>

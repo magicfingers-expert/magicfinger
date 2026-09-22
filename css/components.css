@@ -16,17 +16,14 @@
               box-shadow var(--transition-smooth), 
               height var(--transition-smooth),
               backdrop-filter var(--transition-smooth);
-  background: rgba(18, 18, 18, 0.94);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(245, 166, 35, 0.18);
+  background: linear-gradient(180deg, rgba(32, 32, 32, 0.8) 0%, rgba(32, 32, 32, 0) 100%);
 }
 
 .site-header.scrolled {
-  background-color: rgba(14, 14, 14, 0.98);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(245, 166, 35, 0.25);
+  background-color: rgba(32, 32, 32, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(245, 166, 35, 0.15);
   height: calc(var(--header-height) - 15px);
 }
 
@@ -782,101 +779,80 @@
    8. FOOTER
    ========================================================================== */
 .site-footer {
-  background-color: #141414;
+  background-color: #171717;
   border-top: 1px solid rgba(245, 166, 35, 0.2);
   position: relative;
   overflow: hidden;
   padding-top: 5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
 }
 
-.footer-grid,
 .footer-top {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1.35fr 1.35fr;
-  gap: 3.5rem;
-  margin-bottom: 3.5rem;
-  width: 100%;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
 }
 
 .footer-brand p {
   margin: 1.2rem 0 1.5rem;
-  font-size: 0.92rem;
-  line-height: 1.75;
-  color: var(--color-text-secondary);
-  max-width: 360px;
+  font-size: 0.95rem;
+  max-width: 320px;
 }
 
-.footer-title,
 .footer-heading {
   font-family: var(--font-serif-display);
   font-size: 1.1rem;
-  font-weight: 700;
   color: var(--color-cream);
   margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
-.footer-title::after,
 .footer-heading::after {
   content: '';
   position: absolute;
   bottom: -6px;
   left: 0;
-  width: 32px;
+  width: 28px;
   height: 2px;
-  background: var(--gradient-gold);
-  border-radius: 2px;
+  background-color: var(--color-accent-orange);
 }
 
-.footer-links,
 .footer-links-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0.75rem;
 }
 
-.footer-links li,
-.footer-links-list li {
-  list-style: none;
-}
-
-.footer-link,
 .footer-links-list a {
   color: var(--color-text-muted);
-  font-size: 0.92rem;
-  text-decoration: none;
+  font-size: 0.9rem;
   transition: all var(--transition-fast);
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
-.footer-link:hover,
 .footer-links-list a:hover {
   color: var(--color-accent-orange);
-  transform: translateX(5px);
+  transform: translateX(4px);
 }
 
 .footer-contact-item {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   color: var(--color-text-muted);
-  font-size: 0.92rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .footer-contact-item svg {
   color: var(--color-accent-orange);
-  margin-top: 0.25rem;
+  margin-top: 0.2rem;
   flex-shrink: 0;
 }
 
@@ -908,13 +884,13 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.88rem;
-  color: #8A847B;
+  font-size: 0.85rem;
+  color: #7A746B;
 }
 
 /* Back to Top Button */
@@ -958,7 +934,6 @@
   .mobile-nav-toggle {
     display: flex;
   }
-  .footer-grid,
   .footer-top {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
@@ -966,7 +941,6 @@
 }
 
 @media (max-width: 768px) {
-  .footer-grid,
   .footer-top {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -986,118 +960,3 @@
     padding: 1.5rem;
   }
 }
-
-/* ==========================================================================
-   PROOF LIGHTBOX MODAL & MEDIA ZOOM
-   ========================================================================== */
-.dish-card__media {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.dish-card__zoom-hint {
-  position: absolute;
-  bottom: 0.75rem;
-  right: 0.75rem;
-  background: rgba(23, 23, 23, 0.85);
-  border: 1px solid var(--color-border-gold);
-  color: var(--color-cream);
-  padding: 0.35rem 0.65rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  opacity: 0;
-  transition: opacity var(--transition-fast);
-  pointer-events: none;
-  backdrop-filter: blur(4px);
-  z-index: 5;
-}
-
-.dish-card__media:hover .dish-card__zoom-hint {
-  opacity: 1;
-}
-
-.lightbox-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(10, 10, 10, 0.94);
-  backdrop-filter: blur(12px);
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: all var(--transition-smooth);
-}
-
-.lightbox-modal.is-active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.lightbox-content {
-  position: relative;
-  max-width: 1000px;
-  width: 100%;
-  background: #171717;
-  border: 1px solid var(--color-border-gold);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
-}
-
-.lightbox-img {
-  width: 100%;
-  max-height: 70vh;
-  object-fit: contain;
-  background: #111;
-  display: block;
-}
-
-.lightbox-caption {
-  padding: 1.5rem 2rem;
-  background: #1A1A1A;
-  border-top: 1px solid var(--color-border-subtle);
-}
-
-.lightbox-caption-title {
-  font-size: 1.25rem;
-  color: var(--color-cream);
-  margin-bottom: 0.35rem;
-}
-
-.lightbox-caption-desc {
-  font-size: 0.92rem;
-  color: var(--color-text-secondary);
-  line-height: 1.6;
-}
-
-.lightbox-close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(23, 23, 23, 0.85);
-  border: 1px solid var(--color-border-gold);
-  color: var(--color-cream);
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: all var(--transition-fast);
-}
-
-.lightbox-close-btn:hover {
-  background: var(--gradient-gold);
-  color: #171717;
-}
-
