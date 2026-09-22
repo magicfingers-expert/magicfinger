@@ -1,0 +1,427 @@
+/* ==========================================================================
+   SLIDER REVOLUTION-GRADE ANIMATION ENGINE
+   Advanced multi-layer 3D transitions, split-text reveals, HUD particles
+   ========================================================================== */
+
+.hero-slider-section {
+  position: relative;
+  min-height: 90vh;
+  height: 90vh;
+  max-height: 900px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 70% 30%, rgba(0, 240, 255, 0.08) 0%, rgba(4, 8, 20, 0.95) 70%);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+  margin-top: var(--header-height);
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  z-index: 2;
+}
+
+.slide-content-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 3.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+/* ==========================================================================
+   Layered Staggered Animations for Active Slide
+   ========================================================================== */
+.slide-text-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 5;
+}
+
+.slide-badge {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+  margin-bottom: 1.25rem;
+}
+
+.slide.active .slide-badge {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-title {
+  font-size: clamp(2.5rem, 4.8vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.slide-title-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(30px) rotateX(15deg);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-title-line:nth-child(1) { transition-delay: 0.35s; }
+.slide-title-line:nth-child(2) { transition-delay: 0.5s; }
+
+.slide.active .slide-title-line {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+
+.slide-desc {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  color: var(--text-secondary);
+  max-width: 580px;
+  margin-bottom: 2.25rem;
+  line-height: 1.65;
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.65s;
+}
+
+.slide.active .slide-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.8s;
+}
+
+.slide.active .slide-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Visual 3D Graphic / HUD Layer
+   ========================================================================== */
+.slide-visual-layer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+  height: 100%;
+}
+
+.hud-interactive-box {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background: radial-gradient(circle at 50% 50%, rgba(13, 27, 58, 0.7) 0%, rgba(7, 14, 34, 0.9) 100%);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(0, 240, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  opacity: 0;
+  transform: scale(0.9) rotateY(-15deg) translateY(40px);
+  transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.4s;
+  transform-style: preserve-3d;
+}
+
+.slide.active .hud-interactive-box {
+  opacity: 1;
+  transform: scale(1) rotateY(0deg) translateY(0);
+}
+
+/* HUD Circuit Header */
+.hud-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hud-dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.hud-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.hud-dot.red { background: #ff5f56; box-shadow: 0 0 6px #ff5f56; }
+.hud-dot.yellow { background: #ffbd2e; box-shadow: 0 0 6px #ffbd2e; }
+.hud-dot.green { background: #27c93f; box-shadow: 0 0 6px #27c93f; }
+
+.hud-id {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--cyan-neon);
+  letter-spacing: 0.08em;
+}
+
+/* HUD Live Modules */
+.hud-code-block {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  background: rgba(4, 8, 20, 0.7);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 240, 255, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.hud-code-block .token-keyword { color: var(--amber-neon); }
+.hud-code-block .token-function { color: var(--cyan-neon); }
+.hud-code-block .token-string { color: #a5f3fc; }
+.hud-code-block .token-comment { color: var(--text-muted); font-style: italic; }
+
+/* Floating Micro Badges */
+.floating-pill {
+  position: absolute;
+  padding: 0.65rem 1.15rem;
+  background: rgba(10, 19, 41, 0.88);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 240, 255, 0.2);
+  backdrop-filter: blur(12px);
+  z-index: 10;
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+.floating-pill.pill-top-right {
+  top: -18px;
+  right: -25px;
+  border-color: rgba(0, 240, 255, 0.4);
+  animation-delay: 0s;
+}
+
+.floating-pill.pill-bottom-left {
+  bottom: -20px;
+  left: -25px;
+  border-color: rgba(255, 158, 0, 0.45);
+  animation-delay: 2.5s;
+}
+
+.pill-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.pill-icon.cyan-bg { background: rgba(0, 240, 255, 0.15); color: var(--cyan-neon); }
+.pill-icon.amber-bg { background: rgba(255, 158, 0, 0.15); color: var(--amber-neon); }
+
+.pill-text h5 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.1;
+}
+
+.pill-text p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+/* ==========================================================================
+   Slider Controls & Progress
+   ========================================================================== */
+.slider-nav-wrapper {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.slider-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Slider Pagination Bullets */
+.slider-bullets {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.slider-bullet {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  height: 8px;
+  width: 28px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.slider-bullet.active {
+  width: 55px;
+  background: rgba(0, 240, 255, 0.2);
+  border-color: var(--cyan-neon);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.slider-bullet-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--cyan-neon), var(--amber-neon));
+  border-radius: var(--radius-full);
+}
+
+.slider-bullet.active .slider-bullet-progress {
+  animation: bulletProgress 6s linear forwards;
+}
+
+@keyframes bulletProgress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Arrow Navigation */
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.slider-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(10, 19, 41, 0.85);
+  border: 1px solid var(--glass-border);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(8px);
+}
+
+.slider-arrow-btn:hover {
+  background: rgba(0, 240, 255, 0.15);
+  border-color: var(--cyan-neon);
+  color: var(--cyan-neon);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Slide Counter */
+.slide-counter {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.slide-counter-current {
+  color: var(--cyan-neon);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   Responsive Slider Adjustments
+   ========================================================================== */
+@media (max-width: 992px) {
+  .hero-slider-section {
+    height: auto;
+    min-height: 85vh;
+    padding: 3rem 0 5rem;
+  }
+
+  .slide-content-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .slide-visual-layer {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  .hud-interactive-box {
+    max-width: 100%;
+  }
+
+  .floating-pill.pill-top-right {
+    right: 5px;
+  }
+  .floating-pill.pill-bottom-left {
+    left: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .slide-actions .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" style="background:#1E1E1E;font-family:'Inter',-apple-system,BlinkMacSystemFont,Roboto,sans-serif;">
+  <!-- Figma Top App Header -->
+  <rect x="0" y="0" width="1200" height="42" fill="#2C2C2C" stroke-bottom="#383838" stroke-width="1" />
+  
+  <!-- Figma Logo Icon -->
+  <g transform="translate(15, 11)">
+    <rect x="0" y="0" width="10" height="10" rx="5" fill="#F24E1E" />
+    <rect x="10" y="0" width="10" height="10" rx="5" fill="#FF7262" />
+    <rect x="0" y="10" width="10" height="10" rx="5" fill="#A259FF" />
+    <rect x="10" y="10" width="10" height="10" rx="5" fill="#1ABCFE" />
+  </g>
+  
+  <text x="50" y="26" fill="#FFFFFF" font-size="13" font-weight="600">MagicFinger UI Kit • Enterprise Design Tokens &amp; Components</text>
+  <rect x="1060" y="8" width="120" height="26" rx="4" fill="#0D99FF" />
+  <text x="1090" y="25" fill="#FFFFFF" font-size="12" font-weight="600">Share / Export</text>
+
+  <!-- Left Sidebar (Layers & Assets Tree) -->
+  <rect x="0" y="42" width="230" height="708" fill="#2C2C2C" stroke-right="#383838" stroke-width="1" />
+  <text x="20" y="68" fill="#8C8C8C" font-size="11" font-weight="bold">PAGES</text>
+  <rect x="10" y="80" width="210" height="28" rx="4" fill="#383838" />
+  <text x="25" y="98" fill="#FFFFFF" font-size="12" font-weight="600">• 01 Components &amp; Tokens</text>
+  <text x="25" y="125" fill="#B3B3B3" font-size="12">• 02 Mobile App Screens (14)</text>
+  <text x="25" y="150" fill="#B3B3B3" font-size="12">• 03 Web Dashboard Frames</text>
+
+  <text x="20" y="195" fill="#8C8C8C" font-size="11" font-weight="bold">LAYERS • FRAME: BUTTON_SYSTEM</text>
+  <text x="25" y="225" fill="#0D99FF" font-size="11">♦ Button / Primary (Variants: 12)</text>
+  <text x="25" y="250" fill="#B3B3B3" font-size="11">♦ Button / Secondary (Gold Glow)</text>
+  <text x="25" y="275" fill="#B3B3B3" font-size="11">♦ Form Input / Floating Label</text>
+  <text x="25" y="300" fill="#B3B3B3" font-size="11">♦ E-Commerce Card / Luxury</text>
+  <text x="25" y="325" fill="#B3B3B3" font-size="11">♦ Nav Drawer / Blur Overlay</text>
+
+  <!-- Central Canvas Grid (Width 730px) -->
+  <g transform="translate(255, 65)">
+    <!-- Canvas Frame 1: Design Tokens -->
+    <rect x="0" y="0" width="420" height="280" rx="6" fill="#181818" stroke="#383838" stroke-width="1" />
+    <text x="20" y="30" fill="#FFFFFF" font-size="14" font-weight="bold">Color Palette Tokens (Variables)</text>
+    
+    <!-- Swatch 1: Obsidian -->
+    <rect x="20" y="50" width="75" height="55" rx="4" fill="#171717" stroke="#383838" stroke-width="1" />
+    <text x="20" y="120" fill="#FFFFFF" font-size="11" font-weight="bold">Obsidian</text>
+    <text x="20" y="135" fill="#8C8C8C" font-size="10">#171717</text>
+
+    <!-- Swatch 2: Flame Gold -->
+    <rect x="115" y="50" width="75" height="55" rx="4" fill="#F7941D" />
+    <text x="115" y="120" fill="#FFFFFF" font-size="11" font-weight="bold">Flame Gold</text>
+    <text x="115" y="135" fill="#8C8C8C" font-size="10">#F7941D</text>
+
+    <!-- Swatch 3: Amber Glow -->
+    <rect x="210" y="50" width="75" height="55" rx="4" fill="#F5A623" />
+    <text x="210" y="120" fill="#FFFFFF" font-size="11" font-weight="bold">Amber</text>
+    <text x="210" y="135" fill="#8C8C8C" font-size="10">#F5A623</text>
+
+    <!-- Swatch 4: Warm Cream -->
+    <rect x="305" y="50" width="75" height="55" rx="4" fill="#F4E3C1" />
+    <text x="305" y="120" fill="#FFFFFF" font-size="11" font-weight="bold">Warm Cream</text>
+    <text x="305" y="135" fill="#8C8C8C" font-size="10">#F4E3C1</text>
+
+    <!-- Typography Scale -->
+    <text x="20" y="175" fill="#8C8C8C" font-size="11" font-weight="bold">TYPOGRAPHY SYSTEM</text>
+    <text x="20" y="200" fill="#FFFFFF" font-size="18" font-family="'Cinzel',serif" font-weight="bold">Cinzel Display 32px • Luxury</text>
+    <text x="20" y="225" fill="#F4E3C1" font-size="14">Plus Jakarta Sans • 16px Regular / 600 SemiBold</text>
+    <text x="20" y="250" fill="#8C8C8C" font-size="12" font-family="monospace">JetBrains Mono 13px • Code &amp; Telemetry</text>
+
+    <!-- Canvas Frame 2: Interactive Component Variants Matrix -->
+    <rect x="0" y="305" width="420" height="355" rx="6" fill="#181818" stroke="#383838" stroke-width="1" />
+    <text x="20" y="335" fill="#FFFFFF" font-size="14" font-weight="bold">Interactive Component Variant Matrix</text>
+
+    <!-- Button Default -->
+    <g transform="translate(20, 360)">
+      <rect x="0" y="0" width="160" height="42" rx="6" fill="#F7941D" />
+      <text x="35" y="26" fill="#171717" font-size="13" font-weight="bold">Get a Quote →</text>
+      <text x="180" y="26" fill="#8C8C8C" font-size="12">Default State (Solid Gold)</text>
+    </g>
+
+    <!-- Button Hover / Glow -->
+    <g transform="translate(20, 420)">
+      <rect x="0" y="0" width="160" height="42" rx="6" fill="#FFA638" stroke="#FDE8B3" stroke-width="1.5" />
+      <text x="35" y="26" fill="#171717" font-size="13" font-weight="bold">Get a Quote →</text>
+      <text x="180" y="26" fill="#0CCE6B" font-size="12">✓ Hover State (+Glow 25px)</text>
+    </g>
+
+    <!-- Button Secondary -->
+    <g transform="translate(20, 480)">
+      <rect x="0" y="0" width="160" height="42" rx="6" fill="#221E1B" stroke="#F5A623" stroke-width="1" />
+      <text x="25" y="26" fill="#F4E3C1" font-size="13" font-weight="600">View Screenshots</text>
+      <text x="180" y="26" fill="#8C8C8C" font-size="12">Secondary Ghost Glass</text>
+    </g>
+
+    <!-- Card Component Preview -->
+    <g transform="translate(20, 545)">
+      <rect x="0" y="0" width="380" height="90" rx="6" fill="#221E1B" stroke="#F7941D" stroke-width="1" />
+      <text x="15" y="28" fill="#F7941D" font-size="11" font-weight="bold">WEB &amp; SHOPIFY COMPONENT</text>
+      <text x="15" y="52" fill="#FFFFFF" font-size="14" font-weight="bold">Shopify Plus Storefront Architecture</text>
+      <text x="15" y="74" fill="#0CCE6B" font-size="11">• Auto-Layout Enabled • Padding 24px • Spacing 16px</text>
+    </g>
+
+    <!-- Canvas Frame 3: Mobile Prototype Artboard (Right Canvas) -->
+    <g transform="translate(445, 0)">
+      <rect x="0" y="0" width="240" height="490" rx="24" fill="#111111" stroke="#383838" stroke-width="2" />
+      <rect x="80" y="10" width="80" height="18" rx="9" fill="#000000" />
+      
+      <!-- Mobile Screen Content -->
+      <rect x="15" y="45" width="210" height="35" rx="6" fill="#221E1B" stroke="#F5A623" stroke-width="1" />
+      <text x="30" y="67" fill="#F4E3C1" font-size="12" font-weight="bold">MAGIC FINGER STUDIO</text>
+      
+      <rect x="15" y="95" width="210" height="110" rx="8" fill="#1C1816" />
+      <text x="25" y="125" fill="#FFFFFF" font-size="13" font-weight="bold">Elite Full-Stack &amp;</text>
+      <text x="25" y="145" fill="#F7941D" font-size="13" font-weight="bold">AI Bot Engineering</text>
+      <rect x="25" y="160" width="100" height="28" rx="4" fill="#F7941D" />
+      <text x="38" y="178" fill="#111111" font-size="10" font-weight="bold">Explore Now</text>
+
+      <text x="15" y="230" fill="#8C8C8C" font-size="11" font-weight="bold">ACTIVE DELIVERABLES</text>
+      <rect x="15" y="245" width="210" height="50" rx="6" fill="#1C1816" stroke="#383838" stroke-width="1" />
+      <text x="25" y="268" fill="#FFFFFF" font-size="11" font-weight="bold">Shopify Store ($142.8k)</text>
+      <text x="25" y="285" fill="#0CCE6B" font-size="9">• 100/100 Core Web Vitals</text>
+
+      <rect x="15" y="305" width="210" height="50" rx="6" fill="#1C1816" stroke="#383838" stroke-width="1" />
+      <text x="25" y="328" fill="#FFFFFF" font-size="11" font-weight="bold">Sniper Bot (38.4ms)</text>
+      <text x="25" y="345" fill="#F7941D" font-size="9">• 2,400 Proxy Nodes</text>
+
+      <!-- Bottom Nav -->
+      <rect x="15" y="435" width="210" height="40" rx="10" fill="#1F1C1A" />
+      <text x="35" y="460" fill="#F7941D" font-size="14">•</text>
+      <text x="90" y="460" fill="#8C8C8C" font-size="14">•</text>
+      <text x="145" y="460" fill="#8C8C8C" font-size="14">•</text>
+      <text x="195" y="460" fill="#8C8C8C" font-size="14">•</text>
+    </g>
+  </g>
+
+  <!-- Right Sidebar (Properties & Auto-Layout Inspector) -->
+  <rect x="980" y="42" width="220" height="708" fill="#2C2C2C" stroke-left="#383838" stroke-width="1" />
+  <text x="1000" y="68" fill="#FFFFFF" font-size="12" font-weight="bold">Design Inspector</text>
+  
+  <text x="1000" y="105" fill="#8C8C8C" font-size="11">FRAME DIMENSIONS</text>
+  <rect x="1000" y="115" width="85" height="28" rx="4" fill="#383838" />
+  <text x="1010" y="133" fill="#FFFFFF" font-size="11">W: 1280px</text>
+  <rect x="1095" y="115" width="85" height="28" rx="4" fill="#383838" />
+  <text x="1105" y="133" fill="#FFFFFF" font-size="11">H: Auto</text>
+
+  <text x="1000" y="175" fill="#8C8C8C" font-size="11">AUTO-LAYOUT (FLEX)</text>
+  <rect x="1000" y="185" width="180" height="28" rx="4" fill="#0D99FF" fill-opacity="0.15" stroke="#0D99FF" stroke-width="1" />
+  <text x="1015" y="203" fill="#0D99FF" font-size="11" font-weight="bold">Vertical • Gap: 24px</text>
+
+  <text x="1000" y="245" fill="#8C8C8C" font-size="11">CORNER RADIUS</text>
+  <rect x="1000" y="255" width="180" height="28" rx="4" fill="#383838" />
+  <text x="1015" y="273" fill="#FFFFFF" font-size="11">12px (Smooth Squircle)</text>
+
+  <text x="1000" y="315" fill="#8C8C8C" font-size="11">EFFECTS • GLOW</text>
+  <rect x="1000" y="325" width="180" height="28" rx="4" fill="#383838" />
+  <text x="1015" y="343" fill="#F7941D" font-size="11">Gold Glow (0 0 25px 0.35)</text>
+</svg>

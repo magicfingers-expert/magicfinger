@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <rect width="1200" height="800" fill="#181818"/>
+      <rect width="1200" height="48" fill="#242424"/>
+      <text x="30" y="30" font-family="sans-serif" font-size="15" font-weight="700" fill="#FFF">Roblox Studio 2026 - CombatEngine.rbxl</text>
+
+      <rect x="20" y="65" width="580" height="710" rx="6" fill="#10141C" stroke="#2D2D2D"/>
+      <text x="40" y="100" font-family="sans-serif" font-size="14" font-weight="700" fill="#2CE5F5">3D Viewport: Real-Time Server Hitbox Test</text>
+      <circle cx="310" cy="420" r="140" fill="none" stroke="#FF0055" stroke-width="2" stroke-dasharray="10 6"/>
+      <text x="310" y="425" font-family="monospace" font-size="13" fill="#FF5555" text-anchor="middle">[Active Hitbox Sphere: 4.5 Studs]</text>
+
+      <rect x="620" y="65" width="560" height="710" rx="6" fill="#121212" stroke="#2D2D2D"/>
+      <text x="640" y="100" font-family="JetBrains Mono, monospace" font-size="14" fill="#F5A623">CombatController.luau</text>
+      <g transform="translate(640, 135)" font-family="JetBrains Mono, monospace" font-size="13" fill="#E6EDF3">
+        <text x="0" y="0"><tspan fill="#F7941D">local</tspan> CombatService = {}</text>
+        <text x="0" y="30"><tspan fill="#F7941D">function</tspan> CombatService:ExecuteCombo(player)</text>
+        <text x="20" y="60"><tspan fill="#888">-- Authoritative server validation</tspan></text>
+        <text x="20" y="90"><tspan fill="#F7941D">local</tspan> character = player.Character</text>
+        <text x="20" y="120"><tspan fill="#F7941D">local</tspan> hitbox = RaycastParams.new()</text>
+        <text x="20" y="150">hitbox.FilterType = RaycastFilterType.Exclude</text>
+        <text x="20" y="180">AnimationController:PlayTrack(<tspan fill="#27C93F">"Slash_Heavy"</tspan>)</text>
+        <text x="0" y="210"><tspan fill="#F7941D">end</tspan></text>
+        <text x="0" y="270" fill="#27C93F">-- [OUTPUT]: 60.0 FPS • 0.0ms Latency</text>
+      </g>
+    </svg>

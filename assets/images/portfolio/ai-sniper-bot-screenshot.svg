@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" style="background:#0D1117;font-family:'JetBrains Mono','Courier New',Consolas,monospace;">
+  <defs>
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+    <linearGradient id="discordGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B2D31" />
+      <stop offset="100%" stop-color="#1E1F22" />
+    </linearGradient>
+  </defs>
+
+  <!-- Window Chrome Top Bar -->
+  <rect x="0" y="0" width="1200" height="38" fill="#090D13" />
+  <circle cx="20" cy="19" r="6" fill="#FF5F56" />
+  <circle cx="40" cy="19" r="6" fill="#FFBD2E" />
+  <circle cx="60" cy="19" r="6" fill="#27C93F" />
+  <text x="500" y="24" fill="#8B949E" font-size="12" font-family="'Segoe UI',sans-serif">magicfinger_sniper_engine.py • Visual Studio Code (Workspace: Production-Bots)</text>
+
+  <!-- VS Code Left Activity Bar -->
+  <rect x="0" y="38" width="50" height="712" fill="#090D13" />
+  <circle cx="25" cy="65" r="10" fill="#21262D" />
+  <circle cx="25" cy="105" r="10" fill="#21262D" />
+  <circle cx="25" cy="145" r="10" fill="#21262D" />
+
+  <!-- Code Editor Window (Left Half: width 620px) -->
+  <rect x="50" y="38" width="620" height="420" fill="#0D1117" stroke-right="#21262D" stroke-width="1" />
+  
+  <!-- Editor Tabs -->
+  <rect x="50" y="38" width="620" height="35" fill="#161B22" />
+  <rect x="50" y="38" width="220" height="35" fill="#0D1117" stroke-top="#F7941D" stroke-top-width="2" />
+  <text x="75" y="60" fill="#F7941D" font-size="12">sniper_core.py</text>
+  <text x="250" y="58" fill="#8B949E" font-size="12">×</text>
+  
+  <text x="290" y="60" fill="#8B949E" font-size="12">proxy_manager.py</text>
+  <text x="440" y="60" fill="#8B949E" font-size="12">config.env</text>
+
+  <!-- Python Code Snippet Lines -->
+  <g transform="translate(65, 95)" font-size="12">
+    <text x="0" y="0" fill="#484F58">01</text>
+    <text x="35" y="0" fill="#FF7B72">import</text> <text x="85" y="0" fill="#FFA657">asyncio, aiohttp, time</text>
+
+    <text x="0" y="22" fill="#484F58">02</text>
+    <text x="35" y="22" fill="#FF7B72">from</text> <text x="75" y="22" fill="#79C0FF">magicfinger_engine</text> <text x="220" y="22" fill="#FF7B72">import</text> <text x="270" y="22" fill="#FFA657">UltraProxyPool, DiscordWebhook</text>
+
+    <text x="0" y="44" fill="#484F58">03</text>
+
+    <text x="0" y="66" fill="#484F58">04</text>
+    <text x="35" y="66" fill="#FF7B72">async def</text> <text x="110" y="66" fill="#D2A8FF">execute_sniper_checkout</text><text x="285" y="66" fill="#E6EDF3">(target_sku, proxy_node):</text>
+
+    <text x="0" y="88" fill="#484F58">05</text>
+    <text x="55" y="88" fill="#79C0FF">t_start</text> <text x="115" y="88" fill="#FF7B72">=</text> <text x="135" y="88" fill="#79C0FF">time.perf_counter()</text>
+
+    <text x="0" y="110" fill="#484F58">06</text>
+    <text x="55" y="110" fill="#79C0FF">payload</text> <text x="115" y="110" fill="#FF7B72">=</text> <text x="135" y="110" fill="#A5D6FF">{"sku": target_sku, "qty": 1, "auto_sign": True}</text>
+
+    <text x="0" y="132" fill="#484F58">07</text>
+    <text x="55" y="132" fill="#FF7B72">async with</text> <text x="140" y="132" fill="#79C0FF">aiohttp.ClientSession(proxy=proxy_node) as</text> <text x="475" y="132" fill="#E6EDF3">session:</text>
+
+    <text x="0" y="154" fill="#484F58">08</text>
+    <text x="75" y="154" fill="#FF7B72">async with</text> <text x="160" y="154" fill="#79C0FF">session.post(API_ENDPOINT, json=payload) as</text> <text x="485" y="154" fill="#E6EDF3">resp:</text>
+
+    <text x="0" y="176" fill="#484F58">09</text>
+    <text x="95" y="176" fill="#FF7B72">if</text> <text x="115" y="176" fill="#79C0FF">resp.status</text> <text x="200" y="176" fill="#FF7B72">==</text> <text x="220" y="176" fill="#79C0FF">200:</text>
+
+    <text x="0" y="198" fill="#484F58">10</text>
+    <text x="115" y="198" fill="#79C0FF">latency_ms</text> <text x="195" y="198" fill="#FF7B72">=</text> <text x="215" y="198" fill="#79C0FF">(time.perf_counter() - t_start) * 1000</text>
+
+    <text x="0" y="220" fill="#484F58">11</text>
+    <text x="115" y="220" fill="#FF7B72">await</text> <text x="160" y="220" fill="#79C0FF">DiscordWebhook.dispatch_success(target_sku, latency_ms)</text>
+
+    <text x="0" y="242" fill="#484F58">12</text>
+    <text x="115" y="242" fill="#FF7B72">return</text> <text x="165" y="242" fill="#A5D6FF">{"status": "COPPED", "speed": f"{latency_ms:.1f}ms"}</text>
+  </g>
+
+  <!-- Discord Live Alert Notification Window (Right Top: width 530px) -->
+  <rect x="670" y="38" width="530" height="420" fill="url(#discordGrad)" stroke-left="#21262D" stroke-width="1" />
+  
+  <!-- Discord Channel Header -->
+  <rect x="670" y="38" width="530" height="45" fill="#1E1F22" />
+  <text x="700" y="65" fill="#FFFFFF" font-size="14" font-weight="bold" font-family="'Segoe UI',sans-serif"># ⚡-sniper-success-feed</text>
+  <text x="1060" y="65" fill="#23A55A" font-size="11" font-weight="bold" font-family="'Segoe UI',sans-serif">• BOT ONLINE</text>
+
+  <!-- Discord Bot Message Card -->
+  <g transform="translate(690, 100)" font-family="'Segoe UI',sans-serif">
+    <rect x="0" y="0" width="40" height="40" rx="20" fill="#F7941D" />
+    <text x="13" y="25" fill="#12141A" font-weight="bold" font-size="14">MF</text>
+    
+    <text x="50" y="16" fill="#FFFFFF" font-size="14" font-weight="bold">MagicFinger Sniper Bot</text>
+    <rect x="220" y="4" width="38" height="16" rx="3" fill="#5865F2" />
+    <text x="226" y="16" fill="#FFFFFF" font-size="10" font-weight="bold">BOT</text>
+    <text x="270" y="16" fill="#949BA4" font-size="12">Today at 2:32 PM</text>
+
+    <!-- Embedded Rich Box -->
+    <rect x="50" y="30" width="430" height="270" rx="4" fill="#2B2D31" stroke-left="#23A55A" stroke-left-width="4" />
+    
+    <text x="70" y="58" fill="#23A55A" font-size="15" font-weight="bold">🎯 PRODUCT DROP SNIPED SUCCESSFULLY!</text>
+    <text x="70" y="82" fill="#DBDEE1" font-size="13">High-Frequency Autonomous Checkout Triggered</text>
+
+    <!-- Fields Grid -->
+    <rect x="70" y="100" width="180" height="60" rx="4" fill="#1E1F22" />
+    <text x="80" y="120" fill="#949BA4" font-size="11">TARGET ITEM</text>
+    <text x="80" y="142" fill="#FFFFFF" font-size="13" font-weight="bold">RTX 5090 Edition</text>
+
+    <rect x="270" y="100" width="190" height="60" rx="4" fill="#1E1F22" />
+    <text x="280" y="120" fill="#949BA4" font-size="11">EXECUTION SPEED</text>
+    <text x="280" y="145" fill="#23A55A" font-size="16" font-weight="bold">38.4 ms</text>
+
+    <rect x="70" y="170" width="180" height="60" rx="4" fill="#1E1F22" />
+    <text x="80" y="190" fill="#949BA4" font-size="11">RETAILER &amp; PROXY</text>
+    <text x="80" y="212" fill="#FFFFFF" font-size="12">Shopify Plus • US-VA#4</text>
+
+    <rect x="270" y="170" width="190" height="60" rx="4" fill="#1E1F22" />
+    <text x="280" y="190" fill="#949BA4" font-size="11">ORDER STATUS</text>
+    <text x="280" y="212" fill="#F7941D" font-size="12" font-weight="bold">CONFIRMED (200 OK)</text>
+
+    <text x="70" y="280" fill="#949BA4" font-size="11">Magic Finger Automation Engine v4.2 • 0 dropped webhooks</text>
+  </g>
+
+  <!-- Bottom Integrated Terminal -->
+  <rect x="50" y="458" width="1150" height="292" fill="#0A0D12" stroke-top="#21262D" stroke-top-width="1" />
+  
+  <rect x="50" y="458" width="1150" height="30" fill="#161B22" />
+  <text x="70" y="478" fill="#FDE8B3" font-size="12" font-weight="bold">TERMINAL: bash • node_worker_cluster.py (PID: 88419)</text>
+  <text x="1050" y="478" fill="#23A55A" font-size="11">• ACTIVE (4 Threads)</text>
+
+  <!-- Live Terminal Logs -->
+  <g transform="translate(70, 510)" font-size="12">
+    <text x="0" y="0" fill="#8B949E">[14:32:01.002]</text>
+    <text x="110" y="0" fill="#79C0FF">[INFO]</text>
+    <text x="170" y="0" fill="#E6EDF3">Initializing MagicFinger Multi-Threaded Engine v4.2 on 64 Cores</text>
+
+    <text x="0" y="24" fill="#8B949E">[14:32:01.045]</text>
+    <text x="110" y="24" fill="#79C0FF">[PROXY]</text>
+    <text x="170" y="24" fill="#E6EDF3">Loaded 2,400 clean residential IPs • Handshake test passed in 12ms</text>
+
+    <text x="0" y="48" fill="#8B949E">[14:32:01.090]</text>
+    <text x="110" y="48" fill="#D29922">[MONITOR]</text>
+    <text x="170" y="48" fill="#FFA657">WebSocket connection opened: wss://checkout.stream.io/events • Subscribed</text>
+
+    <text x="0" y="72" fill="#8B949E">[14:32:01.120]</text>
+    <text x="110" y="72" fill="#FF7B72">[ALERT]</text>
+    <text x="170" y="72" fill="#FFA657">Drop detected! SKU: NV-5090-OC-FE • Stock: 5 units • Spawning worker task</text>
+
+    <text x="0" y="96" fill="#8B949E">[14:32:01.158]</text>
+    <text x="110" y="96" fill="#3FB950">[EXECUTE]</text>
+    <text x="170" y="96" fill="#3FB950">POST /cart/add → 200 OK (18ms) | POST /checkout → 200 OK (20.4ms) | TOTAL: 38.4ms</text>
+
+    <text x="0" y="120" fill="#8B949E">[14:32:01.170]</text>
+    <text x="110" y="120" fill="#D2A8FF">[DISCORD]</text>
+    <text x="170" y="120" fill="#E6EDF3">Webhook successfully dispatched to Discord Channel #sniper-success-feed (204 No Content)</text>
+
+    <text x="0" y="144" fill="#8B949E">[14:32:01.200]</text>
+    <text x="110" y="144" fill="#79C0FF">[IDLE]</text>
+    <text x="170" y="144" fill="#8B949E">Awaiting next drop trigger... Memory RSS: 48.2MB | CPU: 0.8%</text>
+
+    <text x="0" y="175" fill="#3FB950">magicfinger@node01:~$ </text>
+    <rect x="180" y="162" width="8" height="15" fill="#3FB950" />
+  </g>
+</svg>

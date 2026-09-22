@@ -1,0 +1,407 @@
+/* ==========================================================================
+   KUZZY KITCHEN - CINEMATIC SLIDER REVOLUTION-GRADE HERO ENGINE
+   Ken Burns Zoom, Layered Parallax, Staggered Text Reveal & Progress Engine
+   ========================================================================== */
+
+.hero-slider-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  max-height: 1080px;
+  overflow: hidden;
+  background-color: #171717;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              visibility 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--header-height) + 1.5rem);
+  box-sizing: border-box;
+}
+
+.slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   SLIDE LAYERS & KEN BURNS ZOOM
+   ========================================================================== */
+.slide-bg-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.slide-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  transform: scale(1);
+  transition: transform 7s cubic-bezier(0.1, 0.9, 0.2, 1);
+  will-change: transform;
+}
+
+/* Ken Burns Active Scale Animation */
+.slide.is-active .slide-bg-img {
+  transform: scale(1.12) translate3d(-1%, -1%, 0);
+}
+
+/* Cinematic Dark Gradient Overlays for High Text Contrast */
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, 
+    rgba(23, 23, 23, 0.95) 0%, 
+    rgba(32, 32, 32, 0.85) 45%, 
+    rgba(32, 32, 32, 0.4) 75%, 
+    rgba(32, 32, 32, 0.6) 100%
+  );
+}
+
+.slide-overlay-radial {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: radial-gradient(circle at 75% 50%, rgba(247, 148, 29, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Decorative Menu-Inspired Circular Rings Layer */
+.slide-decor-rings {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 650px;
+  height: 650px;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 1.5s ease 0.3s, transform 2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+}
+
+.slide.is-active .slide-decor-rings {
+  opacity: 1;
+  transform: translateY(-50%) rotate(15deg);
+}
+
+.decor-ring-outer {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  border-dasharray: 8 6;
+}
+
+.decor-ring-inner {
+  position: absolute;
+  inset: 40px;
+  border-radius: 50%;
+  border: 1px dashed rgba(247, 148, 29, 0.25);
+}
+
+/* ==========================================================================
+   SLIDE CONTENT & STAGGERED REVEALS
+   ========================================================================== */
+.slide-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.slide-content {
+  max-width: 650px;
+  color: var(--color-text-light);
+}
+
+/* Stagger Animation Targets */
+.slide-badge,
+.slide-title-script,
+.slide-title-main,
+.slide-decor-line,
+.slide-description,
+.slide-btn-group {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Staggered Delay Execution When Active */
+.slide.is-active .slide-badge {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.slide.is-active .slide-title-script {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.35s;
+}
+
+.slide.is-active .slide-title-main {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.slide.is-active .slide-decor-line {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.65s;
+}
+
+.slide.is-active .slide-description {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+.slide.is-active .slide-btn-group {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.95s;
+}
+
+/* Slide Typography Enhancements */
+.slide-title-script {
+  font-family: var(--font-script);
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  color: var(--color-accent-orange);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.slide-title-main {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: var(--color-cream);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.slide-description {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  color: #D9D2C7;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 2.2rem;
+  max-width: 540px;
+}
+
+.slide-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   SLIDER CONTROLS, PROGRESS BAR & PAGINATION
+   ========================================================================== */
+.slider-ui-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Bottom Bar: Slide Counter & Indicators */
+.slider-bottom-bar {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: auto;
+}
+
+.slider-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.pagination-dot {
+  width: 32px;
+  height: 4px;
+  background-color: rgba(244, 227, 193, 0.25);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.pagination-dot.is-active {
+  width: 54px;
+  background-color: var(--color-accent-orange);
+  box-shadow: 0 0 10px rgba(247, 148, 29, 0.6);
+}
+
+/* Slide Progress Fill Bar */
+.slider-progress-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 25;
+}
+
+.slider-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--gradient-gold);
+  box-shadow: 0 0 8px var(--color-accent-orange);
+}
+
+/* Counter & Next/Prev Controls */
+.slider-navigation-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.slider-counter {
+  font-family: var(--font-serif-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-cream);
+}
+
+.slider-counter .current-num {
+  color: var(--color-accent-orange);
+  font-size: 1.25rem;
+}
+
+.slider-counter .total-num {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slider-arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(32, 32, 32, 0.75);
+  border: 1px solid var(--color-border-gold);
+  color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(6px);
+}
+
+.slider-arrow-btn:hover {
+  background: var(--gradient-gold);
+  color: #171717;
+  border-color: var(--color-accent-gold);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(247, 148, 29, 0.5);
+}
+
+/* ==========================================================================
+   RESPONSIVE SLIDER ADJUSTMENTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .slide-overlay {
+    background: linear-gradient(90deg, 
+      rgba(23, 23, 23, 0.95) 0%, 
+      rgba(32, 32, 32, 0.85) 60%, 
+      rgba(32, 32, 32, 0.6) 100%
+    );
+  }
+  .slide-decor-rings {
+    width: 450px;
+    height: 450px;
+    right: -50px;
+    opacity: 0.4 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slider-section {
+    height: 85vh;
+    min-height: 580px;
+  }
+  .slide-overlay {
+    background: linear-gradient(180deg, 
+      rgba(23, 23, 23, 0.8) 0%, 
+      rgba(32, 32, 32, 0.9) 65%, 
+      rgba(23, 23, 23, 0.98) 100%
+    );
+  }
+  .slide-bg-img {
+    object-position: center 30%;
+  }
+  .slide-content {
+    max-width: 100%;
+  }
+  .slide-title-script {
+    font-size: 2.2rem;
+  }
+  .slide-btn-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .slide-btn-group .btn {
+    width: 100%;
+  }
+  .slider-bottom-bar {
+    bottom: 1.5rem;
+  }
+  .slider-decor-rings {
+    display: none;
+  }
+}

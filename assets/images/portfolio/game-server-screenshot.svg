@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" style="background:#131A26;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,sans-serif;">
+  <defs>
+    <linearGradient id="pterodactylNav" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B2536" />
+      <stop offset="100%" stop-color="#131A26" />
+    </linearGradient>
+    <linearGradient id="cardDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1D283A" />
+      <stop offset="100%" stop-color="#17202F" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Browser Chrome -->
+  <rect x="0" y="0" width="1200" height="42" fill="#0D121B" />
+  <circle cx="22" cy="21" r="6" fill="#FF5F56" />
+  <circle cx="42" cy="21" r="6" fill="#FFBD2E" />
+  <circle cx="62" cy="21" r="6" fill="#27C93F" />
+  
+  <rect x="180" y="8" width="840" height="26" rx="5" fill="#182130" stroke="#2B3A52" stroke-width="1" />
+  <text x="200" y="25" fill="#8B9BAE" font-size="12" font-family="monospace">https://panel.magicfinger-hosting.net/server/a89f41b2/console</text>
+
+  <!-- Pterodactyl Top Navbar -->
+  <rect x="0" y="42" width="1200" height="60" fill="url(#pterodactylNav)" stroke-bottom="#253247" stroke-width="1" />
+  
+  <text x="35" y="77" fill="#00D4FF" font-size="20" font-weight="900" letter-spacing="1">PTERODACTYL</text>
+  
+  <rect x="220" y="55" width="480" height="34" rx="6" fill="#141C28" stroke="#253247" stroke-width="1" />
+  <text x="235" y="76" fill="#FFFFFF" font-size="13" font-weight="bold">MagicFinger Network • High-Frequency Purpur 1.20.4 Cluster</text>
+  
+  <rect x="1000" y="55" width="165" height="34" rx="6" fill="#0CCE6B" fill-opacity="0.15" stroke="#0CCE6B" stroke-width="1" />
+  <circle cx="1020" cy="72" r="5" fill="#0CCE6B" />
+  <text x="1035" y="76" fill="#0CCE6B" font-size="12" font-weight="bold">RUNNING • ONLINE</text>
+
+  <!-- 4 Performance Metric Cards (Top Row) -->
+  <g transform="translate(35, 120)">
+    
+    <!-- TPS Card (100% Green Peak) -->
+    <rect x="0" y="0" width="265" height="110" rx="8" fill="url(#cardDark)" stroke="#0CCE6B" stroke-width="1.2" />
+    <text x="20" y="28" fill="#8B9BAE" font-size="12" font-weight="600">TICKS PER SECOND (TPS)</text>
+    <text x="20" y="70" fill="#0CCE6B" font-size="34" font-weight="900" font-family="monospace">20.00 <tspan font-size="16" fill="#8B9BAE">/ 20.0</tspan></text>
+    <text x="20" y="94" fill="#0CCE6B" font-size="11" font-weight="bold">• 100.0% Performance • MSPT: 14.2ms</text>
+
+    <!-- CPU Card -->
+    <rect x="285" y="0" width="265" height="110" rx="8" fill="url(#cardDark)" stroke="#253247" stroke-width="1" />
+    <text x="305" y="28" fill="#8B9BAE" font-size="12" font-weight="600">CPU LOAD (Ryzen 9 7950X3D)</text>
+    <text x="305" y="70" fill="#FFFFFF" font-size="32" font-weight="900" font-family="monospace">18.4% <tspan font-size="16" fill="#8B9BAE">/ 400%</tspan></text>
+    <rect x="305" y="85" width="225" height="8" rx="4" fill="#141C28" />
+    <rect x="305" y="85" width="45" height="8" rx="4" fill="#00D4FF" />
+
+    <!-- Memory Card -->
+    <rect x="570" y="0" width="265" height="110" rx="8" fill="url(#cardDark)" stroke="#253247" stroke-width="1" />
+    <text x="590" y="28" fill="#8B9BAE" font-size="12" font-weight="600">DEDICATED RAM ALLOCATION</text>
+    <text x="590" y="70" fill="#F7941D" font-size="30" font-weight="900" font-family="monospace">12.8 GB <tspan font-size="16" fill="#8B9BAE">/ 32.0 GB</tspan></text>
+    <rect x="590" y="85" width="225" height="8" rx="4" fill="#141C28" />
+    <rect x="590" y="85" width="90" height="8" rx="4" fill="#F7941D" />
+
+    <!-- Players & DDoS Card -->
+    <rect x="855" y="0" width="275" height="110" rx="8" fill="url(#cardDark)" stroke="#253247" stroke-width="1" />
+    <text x="875" y="28" fill="#8B9BAE" font-size="12" font-weight="600">PLAYERS ONLINE (CLUSTER)</text>
+    <text x="875" y="70" fill="#FFFFFF" font-size="32" font-weight="900" font-family="monospace">148 <tspan font-size="16" fill="#8B9BAE">/ 200 Max</tspan></text>
+    <text x="875" y="94" fill="#0CCE6B" font-size="11" font-weight="bold">✓ Anycast 10Gbps DDoS Shield Active</text>
+  </g>
+
+  <!-- Live Server Console Terminal Window (Bottom) -->
+  <g transform="translate(35, 255)">
+    <rect x="0" y="0" width="1130" height="465" rx="8" fill="#0B0F17" stroke="#253247" stroke-width="1" />
+    
+    <!-- Console Title Bar -->
+    <rect x="0" y="0" width="1130" height="38" rx="8" fill="#151E2B" />
+    <text x="20" y="24" fill="#FDE8B3" font-size="13" font-weight="bold" font-family="monospace">SERVER CONSOLE • /home/container/logs/latest.log (Interactive SSH Session)</text>
+    <text x="1000" y="24" fill="#0CCE6B" font-size="11" font-family="monospace">PORT: 25565</text>
+
+    <!-- Live Terminal Stream Logs -->
+    <g transform="translate(20, 65)" font-family="'JetBrains Mono',monospace" font-size="12">
+      <text x="0" y="0" fill="#8B9BAE">[14:48:00 INFO]:</text> <text x="135" y="0" fill="#00D4FF">[PurpurCore]</text> <text x="245" y="0" fill="#E6EDF3">Async chunk saving engine running • 0 tick lag spikes detected</text>
+      
+      <text x="0" y="24" fill="#8B9BAE">[14:48:02 INFO]:</text> <text x="135" y="24" fill="#F7941D">[MagicGuard]</text> <text x="245" y="24" fill="#E6EDF3">Anti-Cheat packet inspection: Verified 148 active players • 0 flags</text>
+      
+      <text x="0" y="48" fill="#8B9BAE">[14:48:05 INFO]:</text> <text x="135" y="48" fill="#0CCE6B">[Network]</text> <text x="245" y="48" fill="#E6EDF3">BungeeCord sync: Player 'VortexKing' joined realm 'Survival-Hardcore' (Latency: 14ms)</text>
+      
+      <text x="0" y="72" fill="#8B9BAE">[14:48:08 INFO]:</text> <text x="135" y="72" fill="#D2A8FF">[Spark Profiler]</text> <text x="245" y="72" fill="#FFA657">TPS Report: [20.00, 20.00, 20.00] • CPU: 18.2% • GC pause: 0.8ms</text>
+      
+      <text x="0" y="96" fill="#8B9BAE">[14:48:10 INFO]:</text> <text x="135" y="96" fill="#0CCE6B">[CosmicGuard]</text> <text x="245" y="96" fill="#E6EDF3">Layer-4 UDP Flood scrubbed • 2.4 Gbps deflected at Chicago POP • 0 impact to gameplay</text>
+
+      <text x="0" y="120" fill="#8B9BAE">[14:48:14 INFO]:</text> <text x="135" y="120" fill="#00D4FF">[Database]</text> <text x="245" y="120" fill="#E6EDF3">MySQL InnoDB async transaction commit: 148 player inventories synced in 4.1ms</text>
+
+      <text x="0" y="144" fill="#8B9BAE">[14:48:18 INFO]:</text> <text x="135" y="144" fill="#0CCE6B">[AutoBackup]</text> <text x="245" y="144" fill="#E6EDF3">Snapshot #9822 created: 42.1 GB world saved to offsite S3 Vault in 3.2s</text>
+
+      <text x="0" y="168" fill="#8B9BAE">[14:48:22 INFO]:</text> <text x="135" y="168" fill="#FDE8B3">[MagicFinger]</text> <text x="245" y="168" fill="#FDE8B3">Cluster performance status: OPTIMAL • 20.00 TPS STABLE</text>
+
+      <!-- Interactive Input Bar -->
+      <rect x="0" y="210" width="1090" height="38" rx="4" fill="#151E2B" stroke="#253247" stroke-width="1" />
+      <text x="15" y="234" fill="#00D4FF">&gt; purpur tps</text>
+      <rect x="135" y="222" width="8" height="14" fill="#00D4FF" />
+    </g>
+  </g>
+</svg>

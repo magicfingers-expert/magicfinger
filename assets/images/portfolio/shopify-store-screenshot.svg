@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" style="background:#0F1117;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161922" />
+      <stop offset="100%" stop-color="#1C202B" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7941D" />
+      <stop offset="100%" stop-color="#F5A623" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1E29" />
+      <stop offset="100%" stop-color="#141720" />
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Header Bar -->
+  <rect x="0" y="0" width="1200" height="42" fill="#12141A" />
+  <circle cx="22" cy="21" r="6" fill="#FF5F56" />
+  <circle cx="42" cy="21" r="6" fill="#FFBD2E" />
+  <circle cx="62" cy="21" r="6" fill="#27C93F" />
+  
+  <!-- URL Bar -->
+  <rect x="180" y="8" width="840" height="26" rx="5" fill="#1C202B" stroke="#2D3345" stroke-width="1" />
+  <text x="200" y="25" fill="#8B949E" font-size="12" font-family="monospace">https://admin.shopify.com/store/magicfinger-luxury-apparel/analytics</text>
+  <rect x="940" y="12" width="65" height="18" rx="3" fill="#0CCE6B" fill-opacity="0.15" stroke="#0CCE6B" stroke-width="0.8" />
+  <text x="947" y="25" fill="#0CCE6B" font-size="10" font-weight="bold">SSL 200 OK</text>
+
+  <!-- App Header -->
+  <rect x="0" y="42" width="1200" height="60" fill="url(#headerGrad)" stroke="#252A38" stroke-width="1" />
+  
+  <!-- Logo & Store Switcher -->
+  <rect x="25" y="54" width="36" height="36" rx="6" fill="#F7941D" />
+  <path d="M43 60 L33 66 L33 78 L43 84 L53 78 L53 66 Z" fill="#FFFFFF" fill-opacity="0.9" />
+  <text x="75" y="71" fill="#FFFFFF" font-size="15" font-weight="bold">AURA STUDIO APPAREL</text>
+  <text x="75" y="86" fill="#8B949E" font-size="11">Shopify Plus Enterprise • US-East Storefront</text>
+
+  <!-- Live Sales Alert -->
+  <rect x="960" y="55" width="215" height="34" rx="6" fill="#1F2533" stroke="#0CCE6B" stroke-width="1" />
+  <circle cx="978" cy="72" r="4" fill="#0CCE6B" />
+  <text x="990" y="76" fill="#FFFFFF" font-size="12" font-weight="600">Live: 142 Active Shoppers</text>
+
+  <!-- Left Navigation Sidebar -->
+  <rect x="0" y="102" width="220" height="648" fill="#12141A" stroke="#202533" stroke-width="1" />
+  
+  <!-- Nav Items -->
+  <g transform="translate(18, 125)">
+    <rect x="0" y="0" width="184" height="36" rx="6" fill="#F7941D" fill-opacity="0.15" stroke="#F7941D" stroke-width="1" />
+    <text x="35" y="23" fill="#F7941D" font-size="13" font-weight="bold">Live Analytics</text>
+    
+    <text x="35" y="65" fill="#9BA3AF" font-size="13">Orders &amp; Drafts</text>
+    <text x="150" y="65" fill="#0CCE6B" font-size="11" font-weight="bold">+18</text>
+    
+    <text x="35" y="105" fill="#9BA3AF" font-size="13">Products (1,240)</text>
+    <text x="35" y="145" fill="#9BA3AF" font-size="13">Customers</text>
+    <text x="35" y="185" fill="#9BA3AF" font-size="13">Theme Editor (Next.js)</text>
+    <text x="35" y="225" fill="#9BA3AF" font-size="13">Discounts &amp; Promos</text>
+    <text x="35" y="265" fill="#9BA3AF" font-size="13">Custom Apps</text>
+    <text x="35" y="305" fill="#9BA3AF" font-size="13">Settings &amp; Webhooks</text>
+  </g>
+
+  <!-- Main Content Dashboard Area -->
+  <g transform="translate(245, 125)">
+    
+    <!-- Top KPI Row (4 Cards) -->
+    <!-- KPI 1 -->
+    <rect x="0" y="0" width="215" height="100" rx="8" fill="url(#cardGrad)" stroke="#252B3A" stroke-width="1" />
+    <text x="18" y="28" fill="#8B949E" font-size="12">Total Sales (Today)</text>
+    <text x="18" y="62" fill="#FFFFFF" font-size="24" font-weight="bold">$18,492.50</text>
+    <text x="18" y="85" fill="#0CCE6B" font-size="11" font-weight="bold">↑ +28.4% vs yesterday</text>
+
+    <!-- KPI 2 -->
+    <rect x="235" y="0" width="215" height="100" rx="8" fill="url(#cardGrad)" stroke="#252B3A" stroke-width="1" />
+    <text x="253" y="28" fill="#8B949E" font-size="12">Monthly Revenue (MRR)</text>
+    <text x="253" y="62" fill="#F7941D" font-size="24" font-weight="bold">$142,850.00</text>
+    <text x="253" y="85" fill="#0CCE6B" font-size="11" font-weight="bold">↑ 104% to target</text>
+
+    <!-- KPI 3 -->
+    <rect x="470" y="0" width="215" height="100" rx="8" fill="url(#cardGrad)" stroke="#252B3A" stroke-width="1" />
+    <text x="488" y="28" fill="#8B949E" font-size="12">Conversion Rate</text>
+    <text x="488" y="62" fill="#FFFFFF" font-size="24" font-weight="bold">4.82%</text>
+    <text x="488" y="85" fill="#0CCE6B" font-size="11" font-weight="bold">↑ +1.4% industry avg</text>
+
+    <!-- KPI 4 -->
+    <rect x="705" y="0" width="225" height="100" rx="8" fill="url(#cardGrad)" stroke="#252B3A" stroke-width="1" />
+    <text x="723" y="28" fill="#8B949E" font-size="12">Avg Order Value (AOV)</text>
+    <text x="723" y="62" fill="#FFFFFF" font-size="24" font-weight="bold">$194.20</text>
+    <text x="723" y="85" fill="#0CCE6B" font-size="11" font-weight="bold">↑ +$22.50 cross-sells</text>
+
+    <!-- Sales Chart & Live Stream Split -->
+    <!-- Sales Graph Box -->
+    <rect x="0" y="120" width="570" height="270" rx="8" fill="url(#cardGrad)" stroke="#252B3A" stroke-width="1" />
+    <text x="20" y="148" fill="#FFFFFF" font-size="14" font-weight="bold">Hourly Sales Volume • Next.js Edge Cache Enabled</text>
+    <text x="460" y="148" fill="#8B949E" font-size="12">Live 24h Stream</text>
+    
+    <!-- Grid lines -->
+    <line x1="20" y1="180" x2="550" y2="180" stroke="#252B3A" stroke-dasharray="3,3" />
+    <line x1="20" y1="230" x2="550" y2="230" stroke="#252B3A" stroke-dasharray="3,3" />
+    <line x1="20" y1="280" x2="550" y2="280" stroke="#252B3A" stroke-dasharray="3,3" />
+    <line x1="20" y1="330" x2="550" y2="330" stroke="#252B3A" stroke-width="1" />
+    
+    <!-- Chart Polygon & Line -->
+    <polygon points="20,330 60,310 110,290 160,305 210,260 260,240 310,210 360,230 410,180 460,165 510,140 550,130 550,330 20,330" fill="url(#goldGrad)" fill-opacity="0.18" />
+    <polyline points="20,330 60,310 110,290 160,305 210,260 260,240 310,210 360,230 410,180 460,165 510,140 550,130" fill="none" stroke="#F7941D" stroke-width="3" />
+    
+    <!-- Point Highlights -->
+    <circle cx="510" cy="140" r="5" fill="#FDE8B3" stroke="#F7941D" stroke-width="2" />
+    <text x="475" y="125" fill="#FDE8B3" font-size="11" font-weight="bold">$1,850/hr</text>
+    
+    <text x="20" y="355" fill="#8B949E" font-size="10">00:00</text>
+    <text x="140" y="355" fill="#8B949E" font-size="10">06:00</text>
+    <text x="280" y="355" fill="#8B949E" font-size="10">12:00</text>
+    <text x="420" y="355" fill="#8B949E" font-size="10">18:00</text>
+    <text x="525" y="355" fill="#8B949E" font-size="10">NOW</text>
+
+    <!-- Recent Real Orders Table -->
+    <rect x="590" y="120" width="340" height="270" rx="8" fill="url(#cardGrad)" stroke="#252B3A" stroke-width="1" />
+    <text x="610" y="148" fill="#FFFFFF" font-size="14" font-weight="bold">Recent High-Value Orders</text>
+    
+    <!-- Order 1 -->
+    <rect x="605" y="165" width="310" height="42" rx="4" fill="#141720" />
+    <text x="615" y="185" fill="#FFFFFF" font-size="12" font-weight="bold">#10892 - Ethan Cole</text>
+    <text x="615" y="198" fill="#8B949E" font-size="10">2 items • 1 min ago • Stripe Express</text>
+    <text x="855" y="190" fill="#0CCE6B" font-size="13" font-weight="bold">$248.00</text>
+
+    <!-- Order 2 -->
+    <rect x="605" y="215" width="310" height="42" rx="4" fill="#141720" />
+    <text x="615" y="235" fill="#FFFFFF" font-size="12" font-weight="bold">#10891 - Sophia Zhang</text>
+    <text x="615" y="248" fill="#8B949E" font-size="10">3 items • 4 mins ago • Apple Pay</text>
+    <text x="855" y="240" fill="#0CCE6B" font-size="13" font-weight="bold">$395.50</text>
+
+    <!-- Order 3 -->
+    <rect x="605" y="265" width="310" height="42" rx="4" fill="#141720" />
+    <text x="615" y="285" fill="#FFFFFF" font-size="12" font-weight="bold">#10890 - Marcus Ray</text>
+    <text x="615" y="298" fill="#8B949E" font-size="10">1 item • 9 mins ago • Shop Pay</text>
+    <text x="855" y="290" fill="#0CCE6B" font-size="13" font-weight="bold">$189.00</text>
+
+    <!-- Order 4 -->
+    <rect x="605" y="315" width="310" height="42" rx="4" fill="#141720" />
+    <text x="615" y="335" fill="#FFFFFF" font-size="12" font-weight="bold">#10889 - Clara Dupont</text>
+    <text x="615" y="348" fill="#8B949E" font-size="10">4 items • 14 mins ago • Klarna</text>
+    <text x="855" y="340" fill="#0CCE6B" font-size="13" font-weight="bold">$520.00</text>
+
+    <!-- Bottom Architecture Badge -->
+    <rect x="0" y="410" width="930" height="60" rx="8" fill="#19202E" stroke="#F7941D" stroke-width="1" />
+    <text x="20" y="435" fill="#FDE8B3" font-size="13" font-weight="bold">DEVELOPED BY MAGIC FINGER STUDIO</text>
+    <text x="20" y="455" fill="#8B949E" font-size="11">Tech Stack: Shopify Plus Liquid Engine • Next.js 14 Headless Framework • Redis Session Storage • Sub-second Checkout</text>
+    <rect x="800" y="423" width="115" height="32" rx="4" fill="#F7941D" />
+    <text x="815" y="443" fill="#12141A" font-size="11" font-weight="bold">PRODUCTION LIVE</text>
+  </g>
+</svg>

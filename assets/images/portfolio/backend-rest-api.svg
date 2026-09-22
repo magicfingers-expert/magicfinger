@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <rect width="1200" height="800" fill="#0C0E12"/>
+      <rect width="1200" height="56" fill="#141820"/>
+      <text x="30" y="36" font-family="sans-serif" font-size="18" font-weight="800" fill="#27C93F">Swagger API Docs • Node.js Express &amp; PostgreSQL Microservice</text>
+
+      <g transform="translate(60, 85)">
+        <rect width="1080" height="70" rx="8" fill="#121A14" stroke="#27C93F" stroke-width="1"/>
+        <rect x="20" y="15" width="70" height="40" rx="4" fill="#27C93F"/>
+        <text x="55" y="40" font-family="sans-serif" font-size="14" font-weight="800" fill="#0C0E12" text-anchor="middle">POST</text>
+        <text x="110" y="40" font-family="JetBrains Mono, monospace" font-size="15" fill="#FFF">/api/v1/auth/jwt-token</text>
+        <text x="1050" y="40" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#27C93F" text-anchor="end">200 OK (8ms)</text>
+
+        <rect y="90" width="1080" height="70" rx="8" fill="#121720" stroke="#337AB7" stroke-width="1"/>
+        <rect x="20" y="105" width="70" height="40" rx="4" fill="#337AB7"/>
+        <text x="55" y="130" font-family="sans-serif" font-size="14" font-weight="800" fill="#FFF" text-anchor="middle">GET</text>
+        <text x="110" y="130" font-family="JetBrains Mono, monospace" font-size="15" fill="#FFF">/api/v1/orders/live-telemetry</text>
+        <text x="1050" y="130" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#27C93F" text-anchor="end">200 OK (12ms)</text>
+
+        <rect y="180" width="1080" height="70" rx="8" fill="#1C1812" stroke="#F5A623" stroke-width="1"/>
+        <rect x="20" y="195" width="70" height="40" rx="4" fill="#F5A623"/>
+        <text x="55" y="220" font-family="sans-serif" font-size="14" font-weight="800" fill="#0C0E12" text-anchor="middle">POST</text>
+        <text x="110" y="220" font-family="JetBrains Mono, monospace" font-size="15" fill="#FFF">/api/v1/payments/stripe-webhook</text>
+        <text x="1050" y="220" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#27C93F" text-anchor="end">200 OK (15ms)</text>
+
+        <g transform="translate(0, 270)">
+          <rect width="1080" height="310" rx="8" fill="#10131A" stroke="#1E2330"/>
+          <text x="30" y="40" font-family="JetBrains Mono, monospace" font-size="14" fill="#8B949E">// Response Body (JSON - Cached in Redis):</text>
+          <g transform="translate(30, 70)" font-family="JetBrains Mono, monospace" font-size="13" fill="#E6EDF3">
+            <text x="0" y="0">{</text>
+            <text x="20" y="25">"status": <tspan fill="#27C93F">"success"</tspan>,</text>
+            <text x="20" y="50">"database": <tspan fill="#27C93F">"PostgreSQL 16 via Prisma ORM"</tspan>,</text>
+            <text x="20" y="75">"query_latency_ms": <tspan fill="#F5A623">11.4</tspan>,</text>
+            <text x="20" y="100">"redis_cache_hit": <tspan fill="#27C93F">true</tspan></text>
+            <text x="0" y="125">}</text>
+          </g>
+        </g>
+      </g>
+    </svg>

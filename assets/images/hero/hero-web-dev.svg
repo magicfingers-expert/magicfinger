@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" style="background:#11141A;font-family:'Segoe UI',monospace;">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1118" />
+      <stop offset="50%" stop-color="#161B26" />
+      <stop offset="100%" stop-color="#08090C" />
+    </linearGradient>
+    <radialGradient id="glowAmber" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7941D" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#11141A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#bgGrad1)" />
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#glowAmber)" />
+
+  <!-- Abstract Code & Wireframe Isometric Grid in Right Backdrop -->
+  <g transform="translate(1050, 180) rotate(-10)" opacity="0.65">
+    <!-- Screen 1 (E-Commerce Storefront) -->
+    <rect x="0" y="0" width="720" height="460" rx="12" fill="#181E2B" stroke="#F7941D" stroke-opacity="0.4" stroke-width="2" />
+    <rect x="0" y="0" width="720" height="35" rx="12" fill="#121620" />
+    <circle cx="20" cy="18" r="5" fill="#FF5F56" />
+    <circle cx="36" cy="18" r="5" fill="#FFBD2E" />
+    <circle cx="52" cy="18" r="5" fill="#27C93F" />
+    <text x="80" y="22" fill="#8B9BAE" font-size="11">https://store.magicfinger.io &bull; Next.js 14</text>
+    
+    <!-- Hero Banner Mockup on Screen -->
+    <rect x="30" y="60" width="660" height="180" rx="8" fill="#222B3D" stroke="#F5A623" stroke-opacity="0.3" stroke-width="1" />
+    <text x="60" y="120" fill="#F4E3C1" font-size="24" font-weight="bold" font-family="'Cinzel',serif">LUXURY APPAREL STORE</text>
+    <text x="60" y="150" fill="#F7941D" font-size="14">Shopify Plus &bull; Sub-Second Checkout &bull; $142.8k MRR</text>
+    
+    <!-- 3 Product Cards -->
+    <rect x="30" y="260" width="205" height="170" rx="6" fill="#141824" stroke="#252F42" stroke-width="1" />
+    <text x="45" y="400" fill="#FFFFFF" font-size="12" font-weight="bold">Wireless Headset</text>
+    <text x="45" y="418" fill="#0CCE6B" font-size="11">$249.00</text>
+
+    <rect x="255" y="260" width="205" height="170" rx="6" fill="#141824" stroke="#252F42" stroke-width="1" />
+    <text x="270" y="400" fill="#FFFFFF" font-size="12" font-weight="bold">Mechanical Keyboard</text>
+    <text x="270" y="418" fill="#0CCE6B" font-size="11">$189.00</text>
+
+    <rect x="480" y="260" width="210" height="170" rx="6" fill="#141824" stroke="#252F42" stroke-width="1" />
+    <text x="495" y="400" fill="#FFFFFF" font-size="12" font-weight="bold">Studio Monitor 4K</text>
+    <text x="495" y="418" fill="#0CCE6B" font-size="11">$599.00</text>
+  </g>
+
+  <!-- Ambient Golden Grid Matrix Lines -->
+  <g stroke="#F7941D" stroke-opacity="0.1" stroke-width="1">
+    <line x1="0" y1="200" x2="1920" y2="200" />
+    <line x1="0" y1="400" x2="1920" y2="400" />
+    <line x1="0" y1="600" x2="1920" y2="600" />
+    <line x1="0" y1="800" x2="1920" y2="800" />
+    <line x1="400" y1="0" x2="400" y2="1080" />
+    <line x1="800" y1="0" x2="800" y2="1080" />
+    <line x1="1200" y1="0" x2="1200" y2="1080" />
+    <line x1="1600" y1="0" x2="1600" y2="1080" />
+  </g>
+</svg>

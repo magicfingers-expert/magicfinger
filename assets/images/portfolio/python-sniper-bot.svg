@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <rect width="1200" height="800" fill="#141414"/>
+      <rect width="1200" height="42" fill="#222"/>
+      <text x="30" y="26" font-family="sans-serif" font-size="13" fill="#CCC">VS Code — sniper_engine.py (Python 3.12 64-bit)</text>
+
+      <g transform="translate(40, 60)">
+        <rect width="1120" height="690" rx="8" fill="#0C0C0C" stroke="#2B2B2B"/>
+        <rect width="1120" height="38" fill="#1A1A1A"/>
+        <text x="20" y="24" font-family="sans-serif" font-size="13" fill="#FFF">TERMINAL: bash (Multi-Threaded Proxy Execution Engine)</text>
+        
+        <g transform="translate(25, 75)" font-family="JetBrains Mono, monospace" font-size="14" fill="#E6EDF3">
+          <text x="0" y="0" fill="#888">$ python3 -m sniper.engine --mode=high_frequency --proxies=residential_pool_us</text>
+          <text x="0" y="35" fill="#337AB7">[2026-09-21 18:24:00.102] [INFO] Initialized 1,500 Residential Proxies (Avg Ping: 14ms)</text>
+          <text x="0" y="70" fill="#F5A623">[2026-09-21 18:24:00.340] [MONITOR] Product restock detected! SKU: VTX-PRO-99</text>
+          <text x="0" y="105" fill="#337AB7">[2026-09-21 18:24:00.358] [THREAD-04] Cart injected via direct REST payload (18ms)</text>
+          <text x="0" y="140" fill="#337AB7">[2026-09-21 18:24:00.382] [THREAD-04] 2Captcha bypass token received (24ms)</text>
+          <text x="0" y="180" fill="#27C93F" font-weight="700">[2026-09-21 18:24:00.400] [SUCCESS] ORDER CONFIRMED! Order #US-984210 (TOTAL SPEED: 0.042s)</text>
+          <text x="0" y="215" fill="#F5A623">[2026-09-21 18:24:00.412] [DISCORD] Instant webhook notification dispatched ✓</text>
+        </g>
+      </g>
+    </svg>

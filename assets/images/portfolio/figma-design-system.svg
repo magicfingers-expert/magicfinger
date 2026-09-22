@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <rect width="1200" height="800" fill="#141414"/>
+      <rect width="1200" height="42" fill="#202020"/>
+      <text x="30" y="26" font-family="sans-serif" font-size="14" font-weight="700" fill="#FFF">Figma — Enterprise Design Tokens &amp; Component Variant System</text>
+
+      <g transform="translate(60, 70)">
+        <rect width="1080" height="670" rx="10" fill="#0C0C0C" stroke="#252525"/>
+        <text x="40" y="45" font-family="sans-serif" font-size="18" font-weight="700" fill="#F5A623">Component Set: Button Variants &amp; States (320 Tokens)</text>
+
+        <g transform="translate(40, 75)">
+          <rect width="180" height="46" rx="6" fill="#F7941D"/>
+          <text x="90" y="28" font-family="sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">Primary Default</text>
+
+          <rect x="200" width="180" height="46" rx="6" fill="#F5A623"/>
+          <text x="290" y="28" font-family="sans-serif" font-size="13" font-weight="700" fill="#171717" text-anchor="middle">Primary Hover</text>
+
+          <rect y="70" width="180" height="46" rx="6" fill="none" stroke="#F5A623" stroke-width="1.5"/>
+          <text x="90" y="98" font-family="sans-serif" font-size="13" font-weight="700" fill="#F5A623" text-anchor="middle">Outline Default</text>
+
+          <rect y="140" width="180" height="46" rx="6" fill="#161616" stroke="#303030"/>
+          <text x="90" y="168" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFF" text-anchor="middle">Ghost State</text>
+
+          <g transform="translate(440, 0)">
+            <text x="0" y="20" font-family="sans-serif" font-size="16" font-weight="700" fill="#FFF">Color Palette Tokens (HEX &amp; HSL Variables)</text>
+            <circle cx="20" cy="60" r="18" fill="#F7941D"/>
+            <text x="50" y="66" font-family="JetBrains Mono, monospace" font-size="13" fill="#FFF">--color-accent-orange: #F7941D</text>
+
+            <circle cx="20" cy="110" r="18" fill="#F5A623"/>
+            <text x="50" y="116" font-family="JetBrains Mono, monospace" font-size="13" fill="#FFF">--color-accent-gold: #F5A623</text>
+
+            <circle cx="20" cy="160" r="18" fill="#202020"/>
+            <text x="50" y="166" font-family="JetBrains Mono, monospace" font-size="13" fill="#FFF">--color-bg-primary: #202020</text>
+          </g>
+        </g>
+      </g>
+    </svg>

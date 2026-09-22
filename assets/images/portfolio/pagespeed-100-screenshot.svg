@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" style="background:#202124;font-family:'Google Sans',Roboto,-apple-system,BlinkMacSystemFont,sans-serif;">
+  <!-- Top Browser Chrome -->
+  <rect x="0" y="0" width="1200" height="42" fill="#17181B" />
+  <circle cx="22" cy="21" r="6" fill="#FF5F56" />
+  <circle cx="42" cy="21" r="6" fill="#FFBD2E" />
+  <circle cx="62" cy="21" r="6" fill="#27C93F" />
+  
+  <rect x="180" y="8" width="840" height="26" rx="5" fill="#292A2D" stroke="#3C4043" stroke-width="1" />
+  <text x="200" y="25" fill="#9AA0A6" font-size="12" font-family="monospace">https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fstore.clientapp.com</text>
+
+  <!-- PageSpeed Insights Header -->
+  <rect x="0" y="42" width="1200" height="65" fill="#202124" stroke-bottom="#3C4043" stroke-width="1" />
+  <text x="40" y="78" fill="#FFFFFF" font-size="20" font-weight="500">PageSpeed Insights</text>
+  <rect x="240" y="60" width="80" height="28" rx="4" fill="#303134" />
+  <text x="255" y="79" fill="#8AB4F8" font-size="13" font-weight="500">Mobile</text>
+  <rect x="330" y="60" width="90" height="28" rx="4" fill="#8AB4F8" fill-opacity="0.15" stroke="#8AB4F8" stroke-width="1" />
+  <text x="345" y="79" fill="#8AB4F8" font-size="13" font-weight="bold">Desktop</text>
+
+  <!-- URL Analysis Banner -->
+  <rect x="40" y="125" width="1120" height="50" rx="8" fill="#303134" />
+  <text x="60" y="156" fill="#E8EAED" font-size="14">Analyzed URL: <tspan fill="#8AB4F8" font-weight="500">https://store.clientapp.com</tspan> (Optimized by Magic Finger Studio)</text>
+  <text x="1020" y="156" fill="#0CCE6B" font-size="13" font-weight="bold">✓ PASSED ALL CWV</text>
+
+  <!-- Main Score Cards Row (4 Lighthouse Gauges) -->
+  <g transform="translate(40, 195)">
+    <rect x="0" y="0" width="1120" height="200" rx="12" fill="#282A2D" stroke="#3C4043" stroke-width="1" />
+    
+    <!-- Gauge 1: PERFORMANCE (100) -->
+    <g transform="translate(110, 30)">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-opacity="0.2" stroke-width="8" />
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-width="8" stroke-dasharray="289" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+      <text x="50" y="58" fill="#0CCE6B" font-size="28" font-weight="bold" text-anchor="middle">100</text>
+      <text x="50" y="125" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">Performance</text>
+    </g>
+
+    <!-- Gauge 2: ACCESSIBILITY (100) -->
+    <g transform="translate(370, 30)">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-opacity="0.2" stroke-width="8" />
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-width="8" stroke-dasharray="289" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+      <text x="50" y="58" fill="#0CCE6B" font-size="28" font-weight="bold" text-anchor="middle">100</text>
+      <text x="50" y="125" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">Accessibility</text>
+    </g>
+
+    <!-- Gauge 3: BEST PRACTICES (100) -->
+    <g transform="translate(630, 30)">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-opacity="0.2" stroke-width="8" />
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-width="8" stroke-dasharray="289" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+      <text x="50" y="58" fill="#0CCE6B" font-size="28" font-weight="bold" text-anchor="middle">100</text>
+      <text x="50" y="125" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">Best Practices</text>
+    </g>
+
+    <!-- Gauge 4: SEO (100) -->
+    <g transform="translate(890, 30)">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-opacity="0.2" stroke-width="8" />
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#0CCE6B" stroke-width="8" stroke-dasharray="289" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+      <text x="50" y="58" fill="#0CCE6B" font-size="28" font-weight="bold" text-anchor="middle">100</text>
+      <text x="50" y="125" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">SEO</text>
+    </g>
+  </g>
+
+  <!-- Core Web Vitals Metrics Breakdown Box -->
+  <g transform="translate(40, 415)">
+    <rect x="0" y="0" width="1120" height="305" rx="12" fill="#282A2D" stroke="#3C4043" stroke-width="1" />
+    <text x="30" y="35" fill="#FFFFFF" font-size="16" font-weight="bold">METRICS: Core Web Vitals Assessment (Real Chrome User Experience Report)</text>
+    
+    <!-- 6 Metric Cards Grid -->
+    <g transform="translate(30, 55)">
+      <rect x="0" y="0" width="335" height="100" rx="8" fill="#202124" stroke="#3C4043" stroke-width="1" />
+      <circle cx="25" cy="30" r="5" fill="#0CCE6B" />
+      <text x="40" y="34" fill="#9AA0A6" font-size="12">First Contentful Paint (FCP)</text>
+      <text x="40" y="70" fill="#0CCE6B" font-size="26" font-weight="bold" font-family="monospace">0.4 s</text>
+      <text x="210" y="70" fill="#9AA0A6" font-size="12">(Target: &lt; 1.8s)</text>
+    </g>
+
+    <g transform="translate(390, 55)">
+      <rect x="0" y="0" width="335" height="100" rx="8" fill="#202124" stroke="#3C4043" stroke-width="1" />
+      <circle cx="25" cy="30" r="5" fill="#0CCE6B" />
+      <text x="40" y="34" fill="#9AA0A6" font-size="12">Largest Contentful Paint (LCP)</text>
+      <text x="40" y="70" fill="#0CCE6B" font-size="26" font-weight="bold" font-family="monospace">0.7 s</text>
+      <text x="210" y="70" fill="#9AA0A6" font-size="12">(Target: &lt; 2.5s)</text>
+    </g>
+
+    <g transform="translate(750, 55)">
+      <rect x="0" y="0" width="335" height="100" rx="8" fill="#202124" stroke="#3C4043" stroke-width="1" />
+      <circle cx="25" cy="30" r="5" fill="#0CCE6B" />
+      <text x="40" y="34" fill="#9AA0A6" font-size="12">Total Blocking Time (TBT)</text>
+      <text x="40" y="70" fill="#0CCE6B" font-size="26" font-weight="bold" font-family="monospace">0 ms</text>
+      <text x="210" y="70" fill="#9AA0A6" font-size="12">(Target: &lt; 200ms)</text>
+    </g>
+
+    <g transform="translate(30, 175)">
+      <rect x="0" y="0" width="335" height="100" rx="8" fill="#202124" stroke="#3C4043" stroke-width="1" />
+      <circle cx="25" cy="30" r="5" fill="#0CCE6B" />
+      <text x="40" y="34" fill="#9AA0A6" font-size="12">Cumulative Layout Shift (CLS)</text>
+      <text x="40" y="70" fill="#0CCE6B" font-size="26" font-weight="bold" font-family="monospace">0.000</text>
+      <text x="210" y="70" fill="#9AA0A6" font-size="12">(Target: &lt; 0.1)</text>
+    </g>
+
+    <g transform="translate(390, 175)">
+      <rect x="0" y="0" width="335" height="100" rx="8" fill="#202124" stroke="#3C4043" stroke-width="1" />
+      <circle cx="25" cy="30" r="5" fill="#0CCE6B" />
+      <text x="40" y="34" fill="#9AA0A6" font-size="12">Speed Index</text>
+      <text x="40" y="70" fill="#0CCE6B" font-size="26" font-weight="bold" font-family="monospace">0.6 s</text>
+      <text x="210" y="70" fill="#9AA0A6" font-size="12">(Target: &lt; 3.4s)</text>
+    </g>
+
+    <g transform="translate(750, 175)">
+      <rect x="0" y="0" width="335" height="100" rx="8" fill="#202124" stroke="#3C4043" stroke-width="1" />
+      <circle cx="25" cy="30" r="5" fill="#0CCE6B" />
+      <text x="40" y="34" fill="#9AA0A6" font-size="12">Time to First Byte (TTFB Edge)</text>
+      <text x="40" y="70" fill="#0CCE6B" font-size="26" font-weight="bold" font-family="monospace">42 ms</text>
+      <text x="210" y="70" fill="#9AA0A6" font-size="12">(Cloudflare Tier 1)</text>
+    </g>
+  </g>
+</svg>

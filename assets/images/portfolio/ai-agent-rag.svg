@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <rect width="1200" height="800" fill="#0C0E12"/>
+      <rect width="1200" height="50" fill="#141820"/>
+      <text x="30" y="32" font-family="sans-serif" font-size="16" font-weight="700" fill="#FFF">LangChain &amp; OpenAI GPT-4 RAG Assistant</text>
+
+      <g transform="translate(60, 80)">
+        <rect width="1080" height="660" rx="10" fill="#10131A" stroke="#1E2430"/>
+        
+        <g transform="translate(40, 40)">
+          <rect x="500" width="480" height="60" rx="8" fill="#2563EB"/>
+          <text x="520" y="36" font-family="sans-serif" font-size="14" fill="#FFF">How do we configure zero-downtime deployments with Docker?</text>
+        </g>
+
+        <g transform="translate(40, 130)">
+          <rect width="840" height="290" rx="8" fill="#181D26" stroke="#2B3445"/>
+          <text x="25" y="35" font-family="sans-serif" font-size="15" font-weight="700" fill="#F5A623">Magic Finger AI Agent (GPT-4o-Turbo + Pinecone Vector Store):</text>
+          <text x="25" y="70" font-family="sans-serif" font-size="14" fill="#E6EDF3">To achieve zero-downtime deployment, we configure Nginx reverse proxy with rolling health checks:</text>
+          
+          <rect x="25" y="95" width="790" height="70" rx="4" fill="#0D0F14"/>
+          <text x="40" y="135" font-family="JetBrains Mono, monospace" font-size="13" fill="#27C93F">docker compose up -d --no-deps --build web_app &amp;&amp; nginx -s reload</text>
+          
+          <text x="25" y="215" font-family="sans-serif" font-size="12" fill="#8B949E">📄 Citations: [Docker_Deployment_Guide.pdf (Score: 0.94)] [Nginx_Cluster.conf (Score: 0.91)]</text>
+        </g>
+      </g>
+    </svg>

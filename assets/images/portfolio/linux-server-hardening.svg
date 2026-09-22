@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <rect width="1200" height="800" fill="#0A0C10"/>
+      <rect width="1200" height="42" fill="#121620"/>
+      <text x="30" y="26" font-family="monospace" font-size="14" fill="#FFF">root@vortex-core-01:~# ufw status &amp;&amp; fail2ban-client status</text>
+
+      <g transform="translate(50, 65)" font-family="JetBrains Mono, monospace" font-size="13" fill="#C9D1D9">
+        <rect width="1100" height="680" rx="8" fill="#0E1118" stroke="#1E2433"/>
+        <g transform="translate(30, 40)">
+          <text x="0" y="0" fill="#58A6FF">Status: active (Hardened by Magic Finger)</text>
+          <text x="0" y="30">To                         Action      From</text>
+          <text x="0" y="55">--                         ------      ----</text>
+          <text x="0" y="80" fill="#3FB950">22/tcp (SSH-ED25519)       ALLOW IN    10.0.0.0/8 (Secure VPN Only)</text>
+          <text x="0" y="105" fill="#3FB950">80,443/tcp (HTTP/HTTPS)    ALLOW IN    Anywhere (Cloudflare Proxy Only)</text>
+          <text x="0" y="130" fill="#3FB950">25565/tcp (Game Port)      ALLOW IN    Anywhere (Anycast DDoS Filtered)</text>
+          
+          <text x="0" y="180" fill="#D29922">Status for the jail: sshd</text>
+          <text x="0" y="210">|- Currently banned: 42 IP addresses</text>
+          <text x="0" y="240" fill="#3FB950">`- Total banned: 1,840 brute-force attacks mitigated (100% blocked ✓)</text>
+        </g>
+      </g>
+    </svg>

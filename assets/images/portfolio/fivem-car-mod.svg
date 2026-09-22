@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <defs>
+        <linearGradient id="fivemSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#05070B"/>
+          <stop offset="60%" stop-color="#0E131F"/>
+          <stop offset="100%" stop-color="#1A101D"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="800" fill="url(#fivemSky)"/>
+      <rect y="500" width="1200" height="300" fill="#080A0E"/>
+      
+      <line x1="0" y1="500" x2="1200" y2="500" stroke="#FF007F" stroke-width="2" opacity="0.6"/>
+      <line x1="600" y1="500" x2="600" y2="800" stroke="#F5A623" stroke-width="4" stroke-dasharray="30 20"/>
+
+      <!-- Supercar Silhouette -->
+      <path d="M 300 640 L 380 540 L 580 510 L 780 520 L 880 570 L 980 640 L 940 680 L 260 680 Z" fill="#121016" stroke="#F7941D" stroke-width="3"/>
+      <circle cx="400" cy="680" r="44" fill="#050505" stroke="#F5A623" stroke-width="6"/>
+      <circle cx="840" cy="680" r="44" fill="#050505" stroke="#F5A623" stroke-width="6"/>
+      <ellipse cx="620" cy="690" rx="320" ry="20" fill="#F7941D" opacity="0.35"/>
+
+      <text x="40" y="45" font-family="JetBrains Mono, monospace" font-size="14" fill="#F5A623" font-weight="700">[US-EAST] VORTEX ROLEPLAY 4K | ID: 284 | FPS: 144.2 | RESMON: 0.01ms</text>
+
+      <!-- HUD Gauge -->
+      <g transform="translate(930, 560)">
+        <circle cx="105" cy="105" r="90" fill="#06090F" stroke="#222" stroke-width="6"/>
+        <circle cx="105" cy="105" r="90" fill="none" stroke="#F7941D" stroke-width="6" stroke-dasharray="450" stroke-dashoffset="120"/>
+        <text x="105" y="90" font-family="JetBrains Mono, monospace" font-size="38" font-weight="900" fill="#FFF" text-anchor="middle">184</text>
+        <text x="105" y="120" font-family="sans-serif" font-size="13" font-weight="700" fill="#888" text-anchor="middle">MPH • GEAR 5</text>
+        <text x="105" y="150" font-family="JetBrains Mono, monospace" font-size="12" fill="#27C93F" text-anchor="middle">7,850 RPM</text>
+      </g>
+
+      <g transform="translate(40, 670)">
+        <rect width="480" height="90" rx="8" fill="rgba(8, 11, 18, 0.9)" stroke="#F5A623" stroke-width="1.5"/>
+        <text x="20" y="32" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#F5A623">CUSTOM HANDLING: V8_TWIN_TURBO_STAGE3</text>
+        <text x="20" y="60" font-family="sans-serif" font-size="13" fill="#E6EDF3">Downforce +45% • Drift Angle: 38° • Custom Audio Bank Active</text>
+      </g>
+    </svg>

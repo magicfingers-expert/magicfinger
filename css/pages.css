@@ -1,0 +1,629 @@
+/* ==========================================================================
+   KUZZY KITCHEN - PAGE SPECIFIC LAYOUTS & SECTIONS
+   Home, About, Services, Contact & Interactive Components
+   ========================================================================== */
+
+/* ==========================================================================
+   1. PAGE HERO BANNERS (ABOUT, SERVICES, CONTACT)
+   ========================================================================== */
+.page-hero {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: calc(var(--header-height) + 3rem);
+  padding-bottom: 5rem;
+  background-color: #171717;
+  overflow: hidden;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.38;
+  transform: scale(1.05);
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(32, 32, 32, 0.6) 0%, rgba(32, 32, 32, 0.96) 80%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-cream);
+  margin-bottom: 1rem;
+}
+
+.page-hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-accent-gold);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. HOME PAGE SPECIFIC STYLES
+   ========================================================================== */
+
+/* Home Intro Section */
+.intro-section {
+  position: relative;
+  background-color: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+.intro-image-composition {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-circle-large {
+  width: clamp(300px, 40vw, 480px);
+  height: clamp(300px, 40vw, 480px);
+  border-radius: 50%;
+  position: relative;
+  padding: 14px;
+  background: linear-gradient(135deg, #F7941D 0%, #F5A623 50%, transparent 80%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), var(--shadow-gold-glow);
+}
+
+.intro-circle-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.intro-badge-floating {
+  position: absolute;
+  bottom: 10%;
+  left: -10px;
+  background: rgba(39, 34, 30, 0.95);
+  border: 1px solid var(--color-border-gold);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+.intro-badge-floating .badge-number {
+  font-family: var(--font-serif-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent-orange);
+  line-height: 1;
+}
+
+.intro-badge-floating .badge-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-cream);
+  line-height: 1.3;
+}
+
+/* Signature Menu Filter Tabs */
+.menu-filter-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.8rem;
+  border-radius: var(--radius-full);
+  background: rgba(39, 34, 30, 0.6);
+  color: var(--color-cream-muted);
+  border: 1px solid var(--color-border-subtle);
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  border-color: var(--color-accent-gold);
+  color: var(--color-cream);
+  background: rgba(247, 148, 29, 0.1);
+}
+
+.filter-btn.is-active {
+  background: linear-gradient(135deg, #F7941D 0%, #F5A623 100%);
+  color: #171717;
+  font-weight: 700;
+  border-color: #F5A623;
+  box-shadow: 0 4px 15px rgba(247, 148, 29, 0.4);
+}
+
+/* Parallax Atmosphere Banner */
+.experience-banner {
+  position: relative;
+  padding: clamp(6rem, 12vw, 10rem) 0;
+  background-color: #171717;
+  overflow: hidden;
+  text-align: center;
+}
+
+.experience-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  transform: scale(1.08);
+}
+
+.experience-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, 
+    rgba(32, 32, 32, 0.9) 0%, 
+    rgba(32, 32, 32, 0.6) 50%, 
+    rgba(32, 32, 32, 0.95) 100%
+  );
+}
+
+.experience-content {
+  position: relative;
+  z-index: 10;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   3. ABOUT US PAGE SPECIFIC STYLES
+   ========================================================================== */
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-img-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-gold);
+  box-shadow: var(--shadow-lg), var(--shadow-gold-glow);
+}
+
+.about-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.about-img-frame:hover img {
+  transform: scale(1.05);
+}
+
+/* Culinary Philosophy 3 Pillars */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.philosophy-card {
+  background: rgba(39, 34, 30, 0.5);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all var(--transition-smooth);
+}
+
+.philosophy-card:hover {
+  border-color: var(--color-accent-orange);
+  background: rgba(49, 42, 36, 0.8);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-gold-glow);
+}
+
+.philosophy-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  color: var(--color-accent-orange);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+/* Chef & Team Cards */
+.team-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-border-gold);
+  box-shadow: var(--shadow-md), var(--shadow-gold-glow);
+}
+
+.team-card__img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.team-card:hover .team-card__img {
+  transform: scale(1.06);
+}
+
+.team-card__info {
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.team-card__name {
+  font-size: 1.35rem;
+  color: var(--color-cream);
+  margin-bottom: 0.3rem;
+}
+
+.team-card__role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-orange);
+  margin-bottom: 0.8rem;
+}
+
+/* Atmosphere Gallery Grid */
+.atmosphere-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  border: 1px solid var(--color-border-subtle);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(32, 32, 32, 0.7);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  transition: opacity var(--transition-smooth);
+  color: var(--color-cream);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+}
+
+.gallery-zoom-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gradient-gold);
+  color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(247, 148, 29, 0.5);
+}
+
+/* ==========================================================================
+   4. OUR SERVICE PAGE SPECIFIC STYLES
+   ========================================================================== */
+.service-showcase-item {
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba(244, 227, 193, 0.08);
+}
+
+.service-showcase-item:last-child {
+  border-bottom: none;
+}
+
+.service-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.service-showcase-grid.reverse {
+  direction: rtl;
+}
+
+.service-showcase-grid.reverse > * {
+  direction: ltr;
+}
+
+.service-img-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-gold);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16/10;
+}
+
+.service-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.service-img-wrapper:hover img {
+  transform: scale(1.06);
+}
+
+.service-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 1.8rem 0 2.2rem;
+}
+
+.service-feature-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+.service-feature-row svg {
+  color: var(--color-accent-orange);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   5. CONTACT US PAGE SPECIFIC STYLES
+   ========================================================================== */
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3.5rem;
+}
+
+.contact-card-info {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: all var(--transition-smooth);
+}
+
+.contact-card-info:hover {
+  border-color: var(--color-accent-gold);
+  box-shadow: var(--shadow-gold-glow);
+  transform: translateY(-3px);
+}
+
+.contact-card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(247, 148, 29, 0.1);
+  border: 1px solid var(--color-border-gold);
+  color: var(--color-accent-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-text h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-card-text p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Styled Map Visual Container */
+.map-visual-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  margin-top: 2.5rem;
+}
+
+.map-visual-header {
+  padding: 1.5rem 2rem;
+  background-color: #1f1b18;
+  border-bottom: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.map-embed-placeholder {
+  position: relative;
+  height: 380px;
+  background: #171717;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-embed-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  filter: contrast(1.1) brightness(0.7);
+}
+
+.map-pin-box {
+  position: relative;
+  z-index: 10;
+  background: rgba(32, 32, 32, 0.95);
+  border: 1px solid var(--color-accent-orange);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), var(--shadow-gold-glow);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+/* FAQ Accordion on Contact */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.faq-item {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item.is-open {
+  border-color: var(--color-accent-orange);
+}
+
+.faq-trigger {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-family: var(--font-serif-display);
+  font-size: 1.05rem;
+  color: var(--color-cream);
+  font-weight: 600;
+}
+
+.faq-icon {
+  transition: transform var(--transition-smooth);
+  color: var(--color-accent-orange);
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-smooth), padding var(--transition-smooth);
+  padding: 0 1.5rem;
+}
+
+.faq-item.is-open .faq-body {
+  max-height: 200px;
+  padding: 0 1.5rem 1.25rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE PAGE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .atmosphere-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .service-showcase-grid.reverse {
+    direction: ltr;
+  }
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .atmosphere-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .map-embed-placeholder {
+    height: 280px;
+  }
+}

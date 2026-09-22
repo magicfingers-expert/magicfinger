@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+      <rect width="1200" height="800" fill="#100A06"/>
+      <rect x="60" y="50" width="1080" height="700" rx="12" fill="#1F1F1F" stroke="#3D3D3D" stroke-width="2"/>
+      
+      <rect x="80" y="70" width="1040" height="55" fill="#141414"/>
+      <text x="600" y="105" font-family="JetBrains Mono, monospace" font-size="18" font-weight="800" fill="#F5A623" text-anchor="middle">⚡ MAGIC ENCHANTS &amp; BLACK MARKET [Paper 1.20+] ⚡</text>
+
+      <g transform="translate(120, 150)">
+        <rect width="960" height="340" fill="#292929" rx="6"/>
+        
+        <g transform="translate(290, 30)">
+          <rect width="420" height="270" rx="8" fill="#100818" stroke="#AA00AA" stroke-width="2.5"/>
+          <text x="25" y="38" font-family="JetBrains Mono, monospace" font-size="17" font-weight="800" fill="#FF55FF">Dragon Slayer Blade [TIER V]</text>
+          <text x="25" y="70" font-family="sans-serif" font-size="14" fill="#AAAAAA">+45.0 Attack Damage</text>
+          <text x="25" y="98" font-family="sans-serif" font-size="14" fill="#55FF55">Life Steal III (Heal 15% on hit)</text>
+          <text x="25" y="126" font-family="sans-serif" font-size="14" fill="#55FFFF">Lightning Strike II (Custom FX)</text>
+          <text x="25" y="165" font-family="sans-serif" font-size="13" fill="#FFAA00">✦ Mythic Item - Magic Finger Plugin</text>
+          <text x="25" y="205" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#FFFF55">Cost: $250,000 Coins</text>
+        </g>
+      </g>
+
+      <g transform="translate(80, 620)">
+        <text x="40" y="40" font-family="JetBrains Mono, monospace" font-size="16" fill="#55FF55">TPS: 20.00 / 20.00 (100% Stable) • Players: 128/128 • Memory: 4.2GB / 16GB</text>
+      </g>
+    </svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" style="background:#090A0F;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,sans-serif;">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E1726" />
+      <stop offset="60%" stop-color="#1B122C" />
+      <stop offset="100%" stop-color="#F7941D" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="tarmacGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181A20" />
+      <stop offset="100%" stop-color="#08090C" />
+    </linearGradient>
+    <linearGradient id="hudGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151928" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0D0F18" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- In-Game 3D Environment Horizon & Road -->
+  <rect x="0" y="0" width="1200" height="420" fill="url(#skyGrad)" />
+  
+  <!-- Distant Cityscape Silhouettes & Volumetric Fog -->
+  <path d="M0 380 L80 340 L140 370 L220 310 L280 360 L360 290 L440 370 L550 320 L680 380 L800 300 L920 365 L1040 320 L1120 370 L1200 350 L1200 420 L0 420 Z" fill="#0D0E14" />
+  
+  <!-- Asphalt Track / Highway -->
+  <polygon points="0,750 1200,750 750,420 450,420" fill="url(#tarmacGrad)" />
+  
+  <!-- Perspective Road Markings with Motion Blur -->
+  <polygon points="590,420 610,420 625,480 575,480" fill="#FDE8B3" fill-opacity="0.6" />
+  <polygon points="570,520 630,520 655,600 545,600" fill="#FDE8B3" fill-opacity="0.8" />
+  <polygon points="535,640 665,640 705,750 495,750" fill="#FDE8B3" />
+
+  <!-- Modded Supercar Cockpit / Hood Silhouette Outline -->
+  <path d="M220 750 Q600 580 980 750 Z" fill="#0C0D12" stroke="#F7941D" stroke-opacity="0.4" stroke-width="2" />
+  <line x1="600" y1="620" x2="600" y2="750" stroke="#F7941D" stroke-opacity="0.3" stroke-width="1.5" />
+
+  <!-- Top In-Game Mod Engine Debug Bar Overlay -->
+  <rect x="25" y="20" width="1150" height="36" rx="6" fill="#0A0D14" fill-opacity="0.85" stroke="#F7941D" stroke-opacity="0.4" stroke-width="1" />
+  <text x="45" y="43" fill="#0CCE6B" font-size="12" font-family="monospace" font-weight="bold">• 144.2 FPS</text>
+  <text x="160" y="43" fill="#8B949E" font-size="12" font-family="monospace">| FRAMETIME: 6.93ms | 4K RAYTRACING: ULTRA | MOD ENGINE: MAGICFINGER v3.8 ACTIVE</text>
+  <text x="1020" y="43" fill="#FDE8B3" font-size="12" font-family="monospace" font-weight="bold">LUA HANDLING: ACTIVE</text>
+
+  <!-- Left HUD Telemetry Box (Speed, Gear, RPM, Boost) -->
+  <g transform="translate(45, 460)">
+    <rect x="0" y="0" width="320" height="250" rx="10" fill="url(#hudGlass)" stroke="#F7941D" stroke-width="1.2" />
+    
+    <!-- Speedometer -->
+    <text x="25" y="40" fill="#8B949E" font-size="11" font-family="monospace">DIGITAL SPEEDOMETER</text>
+    <text x="25" y="115" fill="#FFFFFF" font-size="76" font-weight="900" font-family="'Segoe UI',sans-serif">184</text>
+    <text x="175" y="115" fill="#F7941D" font-size="20" font-weight="bold">MPH</text>
+    
+    <!-- Gear Box -->
+    <rect x="235" y="45" width="60" height="75" rx="6" fill="#181D2D" stroke="#F5A623" stroke-width="1.5" />
+    <text x="248" y="102" fill="#F5A623" font-size="48" font-weight="bold" font-family="'Segoe UI',sans-serif">6</text>
+    <text x="245" y="38" fill="#8B949E" font-size="10" font-family="monospace">GEAR</text>
+
+    <!-- RPM Bar Gauge -->
+    <text x="25" y="148" fill="#8B949E" font-size="11" font-family="monospace">TACHOMETER • 7,850 / 9,000 RPM</text>
+    <rect x="25" y="158" width="270" height="14" rx="3" fill="#1E2333" />
+    <rect x="25" y="158" width="235" height="14" rx="3" fill="#F7941D" />
+    
+    <!-- Boost & G-Force -->
+    <text x="25" y="200" fill="#8B949E" font-size="11" font-family="monospace">TURBO BOOST</text>
+    <text x="25" y="228" fill="#0CCE6B" font-size="20" font-weight="bold" font-family="monospace">+1.85 BAR</text>
+    
+    <text x="180" y="200" fill="#8B949E" font-size="11" font-family="monospace">LATERAL G-FORCE</text>
+    <text x="180" y="228" fill="#FDE8B3" font-size="20" font-weight="bold" font-family="monospace">1.42 G</text>
+  </g>
+
+  <!-- Right HUD Telemetry Box (Tire Physics, Lua Console, Telemetry) -->
+  <g transform="translate(835, 460)">
+    <rect x="0" y="0" width="320" height="250" rx="10" fill="url(#hudGlass)" stroke="#F7941D" stroke-width="1.2" />
+    
+    <text x="20" y="30" fill="#FFFFFF" font-size="13" font-weight="bold" font-family="monospace">TIRE SURFACE &amp; BRAKE TELEMETRY</text>
+    
+    <!-- 4 Tires Diagram -->
+    <g transform="translate(25, 45)">
+      <!-- FL -->
+      <rect x="0" y="0" width="55" height="65" rx="4" fill="#181D2D" stroke="#0CCE6B" stroke-width="1.5" />
+      <text x="12" y="25" fill="#0CCE6B" font-size="11" font-weight="bold" font-family="monospace">FL</text>
+      <text x="8" y="48" fill="#FFFFFF" font-size="11" font-family="monospace">94°C</text>
+
+      <!-- FR -->
+      <rect x="75" y="0" width="55" height="65" rx="4" fill="#181D2D" stroke="#0CCE6B" stroke-width="1.5" />
+      <text x="87" y="25" fill="#0CCE6B" font-size="11" font-weight="bold" font-family="monospace">FR</text>
+      <text x="83" y="48" fill="#FFFFFF" font-size="11" font-family="monospace">96°C</text>
+
+      <!-- RL -->
+      <rect x="0" y="80" width="55" height="65" rx="4" fill="#181D2D" stroke="#F5A623" stroke-width="1.5" />
+      <text x="12" y="105" fill="#F5A623" font-size="11" font-weight="bold" font-family="monospace">RL</text>
+      <text x="8" y="128" fill="#FFFFFF" font-size="11" font-family="monospace">102°C</text>
+
+      <!-- RR -->
+      <rect x="75" y="80" width="55" height="65" rx="4" fill="#181D2D" stroke="#F5A623" stroke-width="1.5" />
+      <text x="87" y="105" fill="#F5A623" font-size="11" font-weight="bold" font-family="monospace">RR</text>
+      <text x="83" y="128" fill="#FFFFFF" font-size="11" font-family="monospace">104°C</text>
+    </g>
+
+    <!-- Script Handling Specs -->
+    <g transform="translate(175, 55)" font-family="monospace" font-size="11">
+      <text x="0" y="0" fill="#8B949E">SUSPENSION:</text>
+      <text x="0" y="18" fill="#FFFFFF" font-weight="bold">Pro Track v4</text>
+      
+      <text x="0" y="45" fill="#8B949E">AERO DOWNFORCE:</text>
+      <text x="0" y="63" fill="#FFFFFF" font-weight="bold">480 KG @ 150mph</text>
+      
+      <text x="0" y="90" fill="#8B949E">DIFFERENTIAL:</text>
+      <text x="0" y="108" fill="#0CCE6B" font-weight="bold">LSD 45% Lock</text>
+
+      <text x="0" y="135" fill="#8B949E">DRIVETRAIN:</text>
+      <text x="0" y="153" fill="#FDE8B3" font-weight="bold">AWD (30/70 Split)</text>
+    </g>
+
+    <!-- Footer Note -->
+    <rect x="15" y="212" width="290" height="26" rx="4" fill="#161B26" />
+    <text x="25" y="229" fill="#F7941D" font-size="10" font-family="monospace">• CUSTOM LUA SCRIPT BY MAGIC FINGER</text>
+  </g>
+</svg>

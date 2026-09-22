@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Magic Finger | Project Dispatch &amp; Inquiries</title>
+  <meta name="description" content="Get in direct contact with Magic Finger. Request custom quotes for Web Development, AI Bots, Speed Optimization, Game Modding, and Server Clusters.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Italianno&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. STICKY LUXURY HEADER
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="site-logo" aria-label="Magic Finger Home">
+        <div class="logo-symbol" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; margin-right: 0.75rem;">
+          <svg width="24" height="24" viewBox="0 0 36 36" fill="none">
+            <path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 9V18M18 18L26 23M18 18L10 23" stroke="#F7941D" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="18" cy="18" r="3.5" fill="#FDE8B3" />
+          </svg>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <span style="font-family: var(--font-serif-display); font-size: 1.35rem; font-weight: 800; letter-spacing: 0.08em; color: var(--color-cream); line-height: 1;">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
+          <span style="font-size: 0.68rem; font-family: var(--font-sans); color: var(--color-accent-gold); letter-spacing: 0.22em; text-transform: uppercase;">Engineering Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="about.html" class="nav-link ">About Us</a>
+        <a href="services.html" class="nav-link ">Our Service</a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm js-open-reservation" aria-label="Request a Project Quote">
+          <span>Get a Quote</span>
+          <span class="btn-icon-right">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </button>
+
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 38px; height: 38px; border-radius: 6px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; display: flex; align-items: center; justify-content: center;">
+          <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2"/><circle cx="18" cy="18" r="3" fill="#FDE8B3"/></svg>
+        </div>
+        <span style="font-family: var(--font-serif-display); font-size: 1.25rem; font-weight: 800; color: var(--color-cream);">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
+      </div>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link ">Home <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link ">About Us <span>→</span></a>
+      <a href="services.html" class="mobile-nav-link ">Our Service <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link active">Contact Us <span>→</span></a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <div class="mobile-nav-info">
+        <p><strong>Email:</strong> thomashammed3@gmail.com</p>
+        <p><strong>Studio:</strong> 750 7th Ave, New York, NY 10019</p>
+      </div>
+      <button type="button" class="btn btn-primary btn-full js-open-reservation" style="width: 100%;">Get a Quote</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       2. PAGE HERO BANNER
+       ========================================================================== -->
+  <section class="page-hero">
+    <img src="assets/images/hero/hero-game-server.jpg" alt="Contact Magic Finger Studio" class="page-hero-bg">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <span class="font-script-accent">Direct Reach</span>
+      <span class="eyebrow-badge">Get In Touch</span>
+      <h1 class="page-hero-title">Contact Magic Finger</h1>
+      <div class="gold-decor-line"><div class="diamond"></div></div>
+      <p class="page-hero-subtitle">“Let's turn your vision into high-performing reality.”</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. CONTACT SECTION & DIRECT DISPATCH FORM
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="about-story-grid">
+        <!-- Studio Info -->
+        <div class="reveal-on-scroll reveal-left">
+          <span class="font-script-accent">Direct Communication</span>
+          <span class="eyebrow-badge">Connect</span>
+          <h2>Let's Discuss Your Project</h2>
+          <div class="gold-decor-line align-left"><div class="diamond"></div></div>
+          
+          <p class="p-lead" style="margin-bottom: 1.5rem;">
+            Whether you require an immediate gig booking or a complex multi-stage custom build, Magic Finger provides 1-on-1 engineer communication and rapid delivery.
+          </p>
+
+          <div class="menu-boxed-container" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+            <h4 style="color: var(--color-cream); font-size: 1.1rem; margin-bottom: 0.35rem;">Studio Email</h4>
+            <a href="mailto:thomashammed3@gmail.com" style="color: var(--color-accent-gold); font-size: 0.95rem; text-decoration: none;">thomashammed3@gmail.com</a>
+            <p style="color: var(--color-text-muted); font-size: 0.8rem; margin-top: 0.35rem;">Average turnaround: Under 2 Hours</p>
+          </div>
+
+          <div class="menu-boxed-container" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+            <h4 style="color: var(--color-cream); font-size: 1.1rem; margin-bottom: 0.35rem;">New York Studio</h4>
+            <p style="color: var(--color-text-light); font-size: 0.95rem;">750 7th Avenue, Suite 1900<br>New York, NY 10019</p>
+          </div>
+
+          <div class="menu-boxed-container" style="padding: 1.5rem;">
+            <h4 style="color: var(--color-cream); font-size: 1.1rem; margin-bottom: 0.35rem;">Operational Hours</h4>
+            <p style="color: var(--color-text-light); font-size: 0.95rem;">24/7 Global Technical Dispatch</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="menu-boxed-container reveal-on-scroll reveal-right" style="padding: 2.5rem;">
+          <h3 style="font-size: 1.5rem; color: var(--color-cream); margin-bottom: 0.5rem;">Send Project Inquiry</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 2rem;">Fill out the specifications below and receive a tailored technical proposal.</p>
+          
+          <form class="reservation-form" id="contactPageForm">
+            <div class="form-group">
+              <label class="form-label" for="cName">Your Name</label>
+              <input type="text" id="cName" class="form-input" placeholder="e.g. Marcus Vance" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cEmail">Your Email</label>
+              <input type="email" id="cEmail" class="form-input" placeholder="marcus@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cService">Target Service Category</label>
+              <select id="cService" class="form-input" required>
+                <option value="Web Apps & Shopify Plus">Web Apps &amp; Shopify Plus</option>
+                <option value="AI Bots & Web Scraping">AI Bots &amp; Web Scraping</option>
+                <option value="Speed Optimization 100/100">Speed Optimization 100/100</option>
+                <option value="Game Modding & Physics">Game Modding &amp; Engines</option>
+                <option value="Dedicated Game Server 20.0 TPS">Dedicated Servers (20.0 TPS)</option>
+                <option value="Figma UI/UX & Design Tokens">UI/UX &amp; Figma Tokens</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cMessage">Project Details &amp; Requirements</label>
+              <textarea id="cMessage" class="form-textarea" rows="4" placeholder="Detail your project specifications..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Project Message</span>
+              <span class="btn-icon-right">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GLOBAL LUXURY FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="site-logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-symbol" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 6px; background: rgba(247,148,29,0.15); border: 1.5px solid #F5A623; margin-right: 0.75rem;">
+              <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><path d="M18 3L4 10V26L18 33L32 26V10L18 3Z" stroke="#F5A623" stroke-width="2"/><circle cx="18" cy="18" r="3" fill="#FDE8B3"/></svg>
+            </div>
+            <span style="font-family: var(--font-serif-display); font-size: 1.25rem; font-weight: 800; color: var(--color-cream);">MAGIC<span style="color: var(--color-accent-orange);">FINGER</span></span>
+          </div>
+          <p>
+            Master Full-Stack Web Applications, AI Automation Bots, Game Modding Engines, and High-Performance Dedicated Server Infrastructure engineered by Magic Finger.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Our Service</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Direct Services</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.fiverr.com/thomastech24" target="_blank" rel="noopener noreferrer" class="footer-link">Web &amp; Shopify Plus</a></li>
+            <li><a href="https://www.fiverr.com/thomas_tech9" target="_blank" rel="noopener noreferrer" class="footer-link">AI Bots &amp; Scraping</a></li>
+            <li><a href="https://www.fiverr.com/thomastech9" target="_blank" rel="noopener noreferrer" class="footer-link">Speed Optimization 100/100</a></li>
+            <li><a href="https://www.fiverr.com/thomastech5" target="_blank" rel="noopener noreferrer" class="footer-link">Game Modding &amp; 3D</a></li>
+            <li><a href="https://www.fiverr.com/vortextech9" target="_blank" rel="noopener noreferrer" class="footer-link">Dedicated Servers (20.0 TPS)</a></li>
+            <li><a href="https://www.fiverr.com/jessicathoms18" target="_blank" rel="noopener noreferrer" class="footer-link">UI/UX &amp; Figma Systems</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Studio</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <div>
+              <span style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-gold); font-weight: 600;">Email Inquiries</span>
+              <a href="mailto:thomashammed3@gmail.com" class="footer-link" style="color: var(--color-cream); font-weight: 500;">thomashammed3@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item" style="margin-top: 1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <span style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-gold); font-weight: 600;">New York Studio</span>
+              <address style="font-style: normal; color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.4;">
+                750 7th Avenue, Suite 1900<br>New York, NY 10019
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Magic Finger. All rights reserved.</span>
+        <span>Crafted for Bespoke Digital Engineering.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE QUOTE & DISPATCH MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="reservationModal" aria-hidden="true">
+    <div class="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <div>
+          <span class="font-script-accent" style="font-size: 2rem;">Direct Dispatch</span>
+          <h3 id="modalTitle" style="font-size: 1.5rem; color: var(--color-cream);">Request Project Proposal</h3>
+        </div>
+        <button type="button" class="modal-close-btn js-close-reservation" aria-label="Close modal">&times;</button>
+      </div>
+      
+      <form class="reservation-form" id="projectProposalForm">
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label" for="quoteName">Your Full Name</label>
+            <input type="text" id="quoteName" class="form-input" placeholder="e.g. Alexander Vance" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quoteEmail">Work Email Address</label>
+            <input type="email" id="quoteEmail" class="form-input" placeholder="alexander@company.com" required>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label" for="quoteService">Selected Service</label>
+            <select id="quoteService" class="form-input" required>
+              <option value="Web Development & Shopify Plus">Web Apps &amp; Shopify Plus</option>
+              <option value="AI Bots & Web Scraping">AI Bots &amp; Web Scraping</option>
+              <option value="Speed Optimization 100/100">Speed Optimization 100/100</option>
+              <option value="Game Modding & Physics">Game Modding &amp; Engines</option>
+              <option value="Dedicated Game Server 20.0 TPS">Dedicated Servers (20.0 TPS)</option>
+              <option value="Figma UI/UX & Design Tokens">UI/UX &amp; Figma Tokens</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quoteBudget">Estimated Budget (USD)</label>
+            <select id="quoteBudget" class="form-input">
+              <option value="$100 - $300">$100 – $300 (Standard Gig)</option>
+              <option value="$300 - $800">$300 – $800 (Custom Build)</option>
+              <option value="$800 - $2,500">$800 – $2,500 (Enterprise Solution)</option>
+              <option value="$2,500+">$2,500+ (Full Infrastructure)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quoteMessage">Project Requirements &amp; Target Timeline</label>
+          <textarea id="quoteMessage" class="form-textarea" rows="4" placeholder="Detail your project specifications, keywords, and timeline requirements..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          <span>Dispatch Proposal Request</span>
+          <span class="btn-icon-right">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Fullscreen Proof Lightbox Modal -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Screenshot Proof Lightbox">
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="Verified Production Screenshot" class="lightbox-img">
+      <div class="lightbox-caption">
+        <h4 class="lightbox-caption-title">Case Study Screenshot</h4>
+        <p class="lightbox-caption-desc">Full resolution in-site production screenshot.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

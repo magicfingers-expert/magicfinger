@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" style="background:#0B0E14;font-family:'JetBrains Mono',monospace;">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0F" />
+      <stop offset="50%" stop-color="#121824" />
+      <stop offset="100%" stop-color="#07090E" />
+    </linearGradient>
+    <radialGradient id="glowAmber3" cx="75%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#F7941D" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#0B0E14" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#bgGrad3)" />
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#glowAmber3)" />
+
+  <!-- Pterodactyl & In-Game Telemetry Cluster Overlay -->
+  <g transform="translate(1060, 160) rotate(-6)" opacity="0.65">
+    <rect x="0" y="0" width="760" height="500" rx="10" fill="#131A26" stroke="#00D4FF" stroke-opacity="0.4" stroke-width="2" />
+    <rect x="0" y="0" width="760" height="35" rx="10" fill="#0D121B" />
+    <circle cx="20" cy="18" r="5" fill="#FF5F56" />
+    <circle cx="36" cy="18" r="5" fill="#FFBD2E" />
+    <circle cx="52" cy="18" r="5" fill="#27C93F" />
+    <text x="80" y="22" fill="#8B9BAE" font-size="11">panel.magicfinger-hosting.net &bull; Enterprise 20.0 TPS Node</text>
+
+    <!-- Metrics Grid -->
+    <g transform="translate(30, 60)">
+      <rect x="0" y="0" width="330" height="100" rx="6" fill="#0B0F17" stroke="#0CCE6B" stroke-width="1" />
+      <text x="20" y="30" fill="#8B9BAE" font-size="11">SERVER TICKS PER SECOND (TPS)</text>
+      <text x="20" y="75" fill="#0CCE6B" font-size="32" font-weight="bold">20.00 / 20.0</text>
+      <text x="200" y="75" fill="#0CCE6B" font-size="12">(100.0%)</text>
+
+      <rect x="360" y="0" width="330" height="100" rx="6" fill="#0B0F17" stroke="#F7941D" stroke-width="1" />
+      <text x="380" y="30" fill="#8B9BAE" font-size="11">ACTIVE PLAYERS &amp; DDOS SHIELD</text>
+      <text x="380" y="75" fill="#FFFFFF" font-size="32" font-weight="bold">148 / 200</text>
+      <text x="560" y="75" fill="#0CCE6B" font-size="12">PROTECTED</text>
+    </g>
+
+    <!-- Console Logs -->
+    <g transform="translate(30, 190)" font-size="12">
+      <rect x="0" y="0" width="690" height="270" rx="6" fill="#0B0F17" stroke="#253247" stroke-width="1" />
+      <text x="20" y="35" fill="#8B9BAE">[14:48:10 INFO]: Purpur 1.20.4 async chunk pipeline: 0 lag ticks</text>
+      <text x="20" y="65" fill="#8B9BAE">[14:48:12 INFO]: Lua Mod Engine: Loaded 4K Raytraced telemetry HUD</text>
+      <text x="20" y="95" fill="#3FB950">[14:48:15 INFO]: Anti-DDoS Anycast scrubber: 0 dropped client packets</text>
+      <text x="20" y="125" fill="#79C0FF">[14:48:18 INFO]: MySQL InnoDB transaction pool: 148 players synced</text>
+      <text x="20" y="155" fill="#FDE8B3">[14:48:22 INFO]: Performance status: 20.00 TPS STABLE &bull; MSPT: 14.2ms</text>
+    </g>
+  </g>
+</svg>
